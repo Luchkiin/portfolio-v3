@@ -6,8 +6,6 @@
   </p>
 </p>
 
-## About the Project
-
 <img src="https://github.com/Luchkiin/portfolio-v3/blob/master/images/og-images/lucasrosendahl_logo.png" alt="Logo" width="Auto" height="Auto">
 
 ## Built With
