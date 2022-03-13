@@ -97,6 +97,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -123,9 +124,9 @@ select {
   *::before,
   *::after {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     -webkit-transition-duration: 0.01ms !important;
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -296,9 +297,6 @@ body {
 
 .container {
   width: 100%;
-  /*
-    max-width: 1600px;
-    */
   margin: 0 auto;
   padding: 0 100px;
 }
@@ -750,6 +748,7 @@ input [type="button"] {
   text-align: center;
   font-size: 0.875rem;
   font-weight: 600;
+  -webkit-text-decoration: none;
   text-decoration: none;
   white-space: nowrap;
   border-radius: 6px;
@@ -1958,20 +1957,6 @@ main > .sidebar-nav-wrapper {
   width: 100%;
   height: 100vh;
   position: relative;
-  /*
-  margin: -162px auto 0; /* - Header height + Padding top/bottom value
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  */
-}
-
-@media only screen and (max-width: 768px) {
-  #home.main-content {
-    /*
-    margin: -72px auto 0; /* - Header height + Padding top/bottom value 
-    ´´*/
-  }
 }
 
 .content-wrapper.home {
@@ -2055,18 +2040,6 @@ main > .sidebar-nav-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .btn {
-    /*
-    position: absolute;
-    display: initial;
-    bottom: 36px;
-    left: 0;
-    right: 0;
-    */
-  }
 }
 
 .service-columns {

@@ -10,7 +10,8 @@ input [type="button"] {
   text-align: $--text-center;
   font-size: $--fs-200;
   font-weight: $--sb-weight;
-  text-decoration: $--no-underline;
+  -webkit-text-decoration: $--no-underline;
+          text-decoration: $--no-underline;
   white-space: nowrap;
   border-radius: $--button-radius;
   cursor: pointer;
@@ -83,7 +84,6 @@ input [type="button"] {
     right: 24px;
   }
   &:hover {
-    -webkit-transition: all 250ms ease-out;
     transition: all 250ms ease-out;
   }
   .icon-wrapper {

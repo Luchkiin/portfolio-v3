@@ -43,8 +43,6 @@
       bottom: 0;
       right: 0;
       opacity: 0;
-      -webkit-transition: all 0.4s ease-in-out 0s;
-      -moz-transition: all 0.4s ease-in-out 0s;
       transition: all 0.4s ease-in-out 0s;
     }
     .work-overlay.youty {
@@ -81,8 +79,6 @@
       top: 0;
       left: 0;
       opacity: 0;
-      -webkit-transition: 0.65s cubic-bezier(0.52, 0.01, 0.16, 1);
-      -moz-transition: 0.65s cubic-bezier(0.52, 0.01, 0.16, 1);
       transition: 0.65s cubic-bezier(0.52, 0.01, 0.16, 1);
       .work-overlay__title {
         color: $white;
