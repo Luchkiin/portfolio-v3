@@ -1,8 +1,5 @@
 <br />
 <p align="center">
-  <a href="#">
-    <img src="https://github.com/Luchkiin/portfolio-v2/blob/master/images/logos/logo.svg" alt="Logo" width="150" height="150">
-  </a>
   <h1 align="center">Current Portfolio</h1>
   <p align="center">
     :arrow_forward: <a href="https://lucasrosendahl.com" target="_blank"> Live Portfolio</a>
