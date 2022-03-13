@@ -11,7 +11,7 @@
 
 ## About the Project
 
-<img src="https://github.com/Luchkiin/portfolio-v2/blob/master/images/og-images/index.png" alt="Logo" width="Auto" height="Auto">
+<img src="https://github.com/Luchkiin/portfolio-v3/blob/master/images/og-images/lucasrosendahl_logo.png" alt="Logo" width="Auto" height="Auto">
 
 ## Built With
 * HTML
