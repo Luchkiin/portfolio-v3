@@ -29,7 +29,6 @@
       align-items: center;
       justify-content: center;
       width: 25%;
-      display: flex;
       @include for-mobile() {
         align-items: stretch;
         width: 100%;
@@ -45,31 +44,15 @@
       }
       &:first-child.active ~ .filter-underline {
         transform: translateX(0) scaleX(25%);
-        -ms-transform: translateX(0) scaleX(25%);
-        -webkit-transform: translateX(0) scaleX(25%);
-        -moz-transform: translateX(0) scaleX(25%);
-        -o-transform: translateX(0) scaleX(25%);
       }
       &:nth-child(2).active ~ .filter-underline {
         transform: translateX(25%) scaleX(0.25);
-        -ms-transform: translateX(25%) scaleX(0.25);
-        -webkit-transform: translateX(25%) scaleX(0.25);
-        -moz-transform: translateX(25%) scaleX(0.25);
-        -o-transform: translateX(25%) scaleX(0.25);
       }
       &:nth-child(3).active ~ .filter-underline {
         transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -ms-transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -webkit-transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -moz-transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -o-transform: translateX(calc(25% * 2)) scaleX(0.25);
       }
       &:nth-child(4).active ~ .filter-underline {
-        transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -ms-transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -webkit-transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -moz-transform: translateX(calc(25% * 2)) scaleX(0.25);
-        -o-transform: translateX(calc(25% * 2)) scaleX(0.25);
+        transform: translateX(calc(25% * 3)) scaleX(0.25);
       }
     }
     .filter-underline {

@@ -1005,7 +1005,6 @@ input [type="button"]:focus {
       -ms-flex-pack: center;
           justify-content: center;
   width: 25%;
-  display: flex;
   cursor: pointer;
 }
 
@@ -1034,35 +1033,23 @@ input [type="button"]:focus {
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:first-child.active ~ .filter-underline {
-  transform: translateX(0) scaleX(25%);
-  -ms-transform: translateX(0) scaleX(25%);
   -webkit-transform: translateX(0) scaleX(25%);
-  -moz-transform: translateX(0) scaleX(25%);
-  -o-transform: translateX(0) scaleX(25%);
+          transform: translateX(0) scaleX(25%);
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:nth-child(2).active ~ .filter-underline {
-  transform: translateX(25%) scaleX(0.25);
-  -ms-transform: translateX(25%) scaleX(0.25);
   -webkit-transform: translateX(25%) scaleX(0.25);
-  -moz-transform: translateX(25%) scaleX(0.25);
-  -o-transform: translateX(25%) scaleX(0.25);
+          transform: translateX(25%) scaleX(0.25);
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:nth-child(3).active ~ .filter-underline {
-  transform: translateX(calc(25% * 2)) scaleX(0.25);
-  -ms-transform: translateX(calc(25% * 2)) scaleX(0.25);
   -webkit-transform: translateX(calc(25% * 2)) scaleX(0.25);
-  -moz-transform: translateX(calc(25% * 2)) scaleX(0.25);
-  -o-transform: translateX(calc(25% * 2)) scaleX(0.25);
+          transform: translateX(calc(25% * 2)) scaleX(0.25);
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:nth-child(4).active ~ .filter-underline {
-  transform: translateX(calc(25% * 2)) scaleX(0.25);
-  -ms-transform: translateX(calc(25% * 2)) scaleX(0.25);
-  -webkit-transform: translateX(calc(25% * 2)) scaleX(0.25);
-  -moz-transform: translateX(calc(25% * 2)) scaleX(0.25);
-  -o-transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -webkit-transform: translateX(calc(25% * 3)) scaleX(0.25);
+          transform: translateX(calc(25% * 3)) scaleX(0.25);
 }
 
 .work-filter-wrapper .filter-tabs .filter-underline {
