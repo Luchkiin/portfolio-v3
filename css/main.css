@@ -2051,7 +2051,7 @@ main > .sidebar-nav-wrapper {
 }
 
 .content-wrapper.home .right-section {
-  background-image: url("/images/home/mockups.png");
+  background-image: url("../images/home/mockups.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
