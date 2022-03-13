@@ -1033,23 +1033,35 @@ input [type="button"]:focus {
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:first-child.active ~ .filter-underline {
+  transform: translateX(0) scaleX(25%);
+  -ms-transform: translateX(0) scaleX(25%);
   -webkit-transform: translateX(0) scaleX(25%);
-          transform: translateX(0) scaleX(25%);
+  -moz-transform: translateX(0) scaleX(25%);
+  -o-transform: translateX(0) scaleX(25%);
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:nth-child(2).active ~ .filter-underline {
+  transform: translateX(25%) scaleX(0.25);
+  -ms-transform: translateX(25%) scaleX(0.25);
   -webkit-transform: translateX(25%) scaleX(0.25);
-          transform: translateX(25%) scaleX(0.25);
+  -moz-transform: translateX(25%) scaleX(0.25);
+  -o-transform: translateX(25%) scaleX(0.25);
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:nth-child(3).active ~ .filter-underline {
+  transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -ms-transform: translateX(calc(25% * 2)) scaleX(0.25);
   -webkit-transform: translateX(calc(25% * 2)) scaleX(0.25);
-          transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -moz-transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -o-transform: translateX(calc(25% * 2)) scaleX(0.25);
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:nth-child(4).active ~ .filter-underline {
-  -webkit-transform: translateX(calc(25% * 3)) scaleX(0.25);
-          transform: translateX(calc(25% * 3)) scaleX(0.25);
+  transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -ms-transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -webkit-transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -moz-transform: translateX(calc(25% * 2)) scaleX(0.25);
+  -o-transform: translateX(calc(25% * 2)) scaleX(0.25);
 }
 
 .work-filter-wrapper .filter-tabs .filter-underline {
@@ -1068,12 +1080,6 @@ input [type="button"]:focus {
 
 .work-filter-wrapper .filter-tabs .filter-tab.active {
   color: #000000;
-  /*
-      border-bottom: 2px solid $black;
-      transition: color 250ms ease-in-out;
-      padding-bottom: 15px;
-      margin-bottom: -1px;
-          */
 }
 
 .page-heading {
