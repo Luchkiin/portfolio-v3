@@ -29,6 +29,7 @@
       align-items: center;
       justify-content: center;
       width: 25%;
+      display: flex;
       @include for-mobile() {
         align-items: stretch;
         width: 100%;
