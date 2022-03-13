@@ -180,17 +180,6 @@ jQuery(document).ready(function ($) {
     1
   );
 
-  var hasPlayed = sessionStorage.getItem("hasMyAnimationPlayed");
-
-  if (!hasPlayed) {
-    TweenMax.to(foo, 1, {
-      x: 100,
-      onComplete: function () {
-        sessionStorage.setItem("hasMyAnimationPlayed", true);
-      },
-    });
-  }
-
   /*----------------------------------------------------*/
   /*  Removes the ID # from URL when Nav link is being clicked
     ------------------------------------------------------ */
