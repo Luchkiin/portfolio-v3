@@ -1,0 +1,52 @@
+.service-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  @include for-mobile() {
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+  }
+  div {
+    margin-right: 100px;
+    margin-left: 100px;
+    @include for-tablet() {
+      margin-right: 75px;
+      margin-left: 75px;
+    }
+    @include for-mobile() {
+      margin: 0 0 36px 0;
+    }
+    h2 {
+      margin-bottom: 24px;
+      color: $grey;
+      @include for-mobile() {
+        font-size: $--fs-600;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls-048;
+      }
+    }
+    span {
+      display: block;
+      text-align: center;
+      margin-bottom: 16px;
+      @include for-mobile() {
+        text-align: left;
+        font-size: $--fs-200;
+        font-weight: $--sb-weight;
+        line-height: $--l-h-18;
+        letter-spacing: $--ls-015;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

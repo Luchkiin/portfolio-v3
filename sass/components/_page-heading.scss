@@ -1,0 +1,31 @@
+.page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 27px;
+    margin-bottom: 75px;
+    position: relative;
+    z-index: 1;
+    @include for-mobile() {
+      padding-top: 12px;
+      margin-bottom: 48px;
+    }
+    .left-aligned {
+      position: absolute;
+      left: 0;
+      top: 80%;
+      transform: translateY(-80%);
+      @include for-mobile() {
+        top: 92%;
+        transform: translateY(-92%);
+      }
+    }
+    @include for-mobile() {
+      .h1 {
+        font-size: $--fs-700;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls-048;
+        color: $black;
+      }
+    }
+  }

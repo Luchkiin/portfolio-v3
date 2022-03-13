@@ -1,0 +1,156 @@
+// Homepage Headings
+h1.h1-home {
+  font-size: $--fs-900;
+  font-weight: $--b-weight;
+  letter-spacing: $--ls--05;
+  color: $black;
+  text-align: $--text-left;
+  text-transform: $--capitalize;
+  padding-bottom: 16px;
+  @include for-tablet() {
+    font-size: $--fs-800;
+    padding-bottom: 8px;
+  }
+}
+
+h2.h2-home {
+  font-size: $--fs-600;
+  font-weight: $--r-weight;
+  line-height: $--l-h-32;
+  letter-spacing: $--ls-025;
+  color: $black;
+  text-align: $--text-left ;
+  padding-bottom: 64px;
+  @include for-tablet() {
+    font-size: $--fs-200;
+    line-height: $--l-h-22;
+    letter-spacing: $--ls-015;
+    padding-bottom: 48px;
+    text-align: $--text-center;
+  }
+}
+
+// Headings
+.h1 {
+  font-size: $--fs-800;
+  font-weight: $--sb-weight;
+  letter-spacing: $--ls--15;
+  color: $black;
+}
+
+.h2 {
+  font-size: $--fs-700;
+  font-weight: $--sb-weight;
+  letter-spacing: $--ls-048;
+  color: $black;
+}
+
+.h3 {
+  font-size: $--fs-600;
+  font-weight: $--sb-weight;
+  letter-spacing: $--ls-048;
+  color: $black;
+}
+
+.h4 {
+  font-size: $--fs-500;
+  font-weight: $--sb-weight;
+  letter-spacing: $--ls-015;
+  color: $black;
+}
+
+.h5 {
+  font-size: $--fs-400;
+  font-weight: $--sb-weight;
+  letter-spacing: $--ls-015;
+  color: $black;
+}
+
+// Subtitles
+
+.subtitle.subtitle--large {
+  font-size: $--fs-300;
+  font-weight: $--sb-weight;
+  line-height: $--l-h-20;
+  letter-spacing: $--ls-015;
+}
+
+.subtitle.subtitle--small {
+  font-size: $--fs-200;
+  font-weight: $--sb-weight;
+  line-height: $--l-h-18;
+  letter-spacing: $--ls-015;
+}
+
+.subtitle.subtitle--uppercase {
+  font-size: $--fs-200;
+  font-weight: $--sb-weight;
+  line-height: $--l-h-24;
+  letter-spacing: $--ls-048;
+  text-transform: $--uppercase;
+}
+
+// Body
+.body.body--large {
+  font-size: $--fs-300;
+  font-weight: $--r-weight;
+  line-height: $--l-h-27;
+  letter-spacing: $--ls-025;
+  color: $black;
+}
+
+.body.body--small {
+  font-size: $--fs-200;
+  font-weight: $--r-weight;
+  line-height: $--l-h-24;
+  letter-spacing: $--ls-025;
+  color: $black;
+}
+
+// Captions
+.caption.caption--large {
+  font-size: $--fs-300;
+  font-weight: $--r-weight;
+  line-height: $--l-h-20;
+  letter-spacing: $--ls-015;
+}
+.caption.caption--medium {
+  font-size: $--fs-200;
+  font-weight: $--r-weight;
+  line-height: $--l-h-20;
+  letter-spacing: $--ls-015;
+}
+
+.caption.caption--small {
+  font-size: $--fs-100;
+  font-weight: $--r-weight;
+  line-height: $--l-h-18;
+  letter-spacing: $--ls-015;
+}
+
+// Links
+a.link.link--large {
+  font-size: $--fs-300;
+  font-weight: $--m-weight;
+  line-height: $--l-h-29;
+  letter-spacing: $--ls-025;
+  color: $blue;
+  text-decoration: none;
+}
+
+a.link.link--small {
+  font-size: $--fs-200;
+  font-weight: $--m-weight;
+  line-height: $--l-h-27;
+  letter-spacing: $--ls-025;
+  color: $blue;
+  text-decoration: none;
+}
+
+// Buttons
+a.btn {
+  font-size: $--fs-200;
+  font-weight: $--m-weight;
+  letter-spacing: $--ls-048;
+  margin: 0;
+}

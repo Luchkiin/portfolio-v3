@@ -1,0 +1,37 @@
+// Colors
+$petrol: #256265;
+$petrol-hover: rgba(37, 98, 101, 0.9);
+$gold: #b38630;
+$blue: #295999;
+$black: #000000;
+$dark-grey: #6d6d6d;
+$grey: #b1b1b1;
+$light-grey: #e5e5e5;
+$smoke-white: #f6f6f6;
+$white: #ffffff;
+$transparent: transparent;
+$scrollbar-thumb: #cccccc;
+
+// Work Colors
+$youty-yellow: #FFF55A;
+$onetwoid-blue: #004B87; 
+$listd-orange: linear-gradient(to right, #fd746c, #fe8e66);
+$geosty-blue: linear-gradient(to bottom right, rgba(53, 108, 128, 0.75), #39bbe7);
+$ica-red: #F9F5F5;
+$scana-green: #88ADA1;
+$bevera-gold: #BAAC78;
+$techflake-green: #E7F1EC;
+
+// Background Colors
+.bg-primary {
+  background-color: $white;
+}
+.bg-invert {
+  background-color: $petrol;
+}
+.bg-light {
+  background-color: $smoke-white;
+}
+.bg-transparent {
+  background-color: transparent;
+}

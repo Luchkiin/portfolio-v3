@@ -1,0 +1,86 @@
+// General Styles
+body {
+  background-color: $white;
+  font-family: $--font-family;
+  color: $black;
+}
+
+.container {
+  width: 100%;
+  /*
+    max-width: 1600px;
+    */
+  margin: 0 auto;
+  padding: 0 100px;
+  @include for-desktop() {
+    padding: 0 48px;
+  }
+  @include for-tablet() {
+    padding: 0 24px;
+  }
+}
+
+.inner-wrapper {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-wrapper.work {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.line-break {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 75px;
+  position: relative;
+  @include for-mobile() {
+    padding: 75px 0;
+  }
+}
+
+h5 {
+  margin: 0;
+}
+
+p {
+  font-size: $--fs-300;
+  font-weight: $--r-weight;
+  line-height: $--l-h-27;
+  letter-spacing: $--ls-025;
+  color: $black;
+  @include for-mobile() {
+    font-size: $--fs-200;
+    font-weight: $--r-weight;
+    line-height: $--l-h-24;
+    letter-spacing: $--ls-025;
+  }
+}
+
+.lock-scroll {
+  overflow: hidden;
+  -ms-overflow-style: none; // IE 11
+  scrollbar-width: none; // Firefox
+  ::-webkit-scrollbar {
+    display: none; // Chrome, Safari & Opera
+    width: 0;
+    background: $transparent;
+  }
+}

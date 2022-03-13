@@ -1,0 +1,163 @@
+.work-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 48px;
+  padding-bottom: 75px;
+  overflow: hidden;
+  transition: transform 0.4s ease-out;
+  @include for-desktop() {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include for-mobile() {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 36px;
+    padding-bottom: 48px;
+  }
+  .work-image {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    @include for-mobile() {
+      margin-bottom: 12px;
+    }
+    &:hover .work-overlay {
+      opacity: 1;
+    }
+
+    &:hover .work-overlay__details {
+      top: 0;
+      left: 0;
+      opacity: 1;
+    }
+    .work-overlay {
+      background: $black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+    }
+    .work-overlay.youty {
+      background-color: $youty-yellow;
+    }
+    .work-overlay.onetwoid {
+      background-color: $onetwoid-blue;
+    }
+    .work-overlay.listd {
+      background-image: $listd-orange;
+    }
+    .work-overlay.geosty {
+      background-image: $geosty-blue;
+    }
+    .work-overlay.ica {
+      background-color: $ica-red;
+    }
+    .work-overlay.scana {
+      background-color: $scana-green;
+    }
+    .work-overlay.bevera {
+      background-color: $bevera-gold;
+    }
+    .work-overlay.techflake {
+      background-color: $techflake-green;
+    }
+    .work-overlay__details {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      text-align: left;
+      padding: 24px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      -webkit-transition: 0.65s cubic-bezier(0.52, 0.01, 0.16, 1);
+      -moz-transition: 0.65s cubic-bezier(0.52, 0.01, 0.16, 1);
+      transition: 0.65s cubic-bezier(0.52, 0.01, 0.16, 1);
+      .work-overlay__title {
+        color: $white;
+        margin-bottom: 6px;
+        display: block;
+        width: 100%;
+      }
+      span {
+        color: $white;
+      }
+      .view-work-link {
+        display: flex;
+        align-items: center;
+        margin-top: 36px;
+        span {
+          margin-right: 24px;
+        }
+      }
+    }
+    .work-overlay__details.black {
+      color: $black;
+      .work-overlay__title {
+        color: $black;
+      }
+      span {
+        color: $black;
+      }
+      img {
+        color: $black;
+      }
+    }
+  }
+  .work-title {
+    padding-bottom: 6px;
+  }
+  .work-type {
+    color: $dark-grey;
+  }
+  .work-youty {
+    background-color: $youty-yellow;
+  }
+  .work-12id {
+    background-color: $onetwoid-blue;
+  }
+  .work-giwautopart {
+    background-color: $black;
+    /*
+      img {
+        width: 83px;
+        height: auto;
+      }
+      */
+  }
+  .work-listd {
+    background-image: $listd-orange;
+  }
+  .work-geosty {
+    background-image: $geosty-blue;
+  }
+  .work-ica {
+    background-color: $ica-red;
+  }
+  .work-scana {
+    background-color: $scana-green;
+  }
+  .work-bevera {
+    background-color: $bevera-gold;
+  }
+  .work-techflake {
+    background-color: $techflake-green;
+  }
+  .work-grid-item {
+    display: none;
+  }
+  .show-filter {
+    display: block;
+  }
+}

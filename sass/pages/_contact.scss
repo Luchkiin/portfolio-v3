@@ -1,0 +1,104 @@
+.container__contact {
+  overflow: hidden;
+  .subtitle-wrapper {
+    @include for-tablet() {
+      margin-bottom: 10px;
+    }
+    span {
+      color: $grey;
+      @include for-tablet() {
+        font-size: $--fs-200;
+        font-weight: $--sb-weight;
+        line-height: $--l-h-18;
+        letter-spacing: $--ls-015;
+      }
+    }
+  }
+}
+.email-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .email-wrapper {
+    .email {
+      font-size: $--fs-900;
+      font-weight: $--b-weight;
+      letter-spacing: $--ls--05;
+      color: $black;
+      background-image: linear-gradient(
+        to right,
+        rgba(41, 89, 153, 1) 50%,
+        $black 50%
+      );
+      background-size: 200% 100%;
+      background-position: 100%;
+      text-decoration: none;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: $link-hover-left-right-contact;
+      &:hover {
+        background-position: 0%;
+        transition: $link-hover-left-right-contact;
+      }
+      @include for-tablet() {
+        font-size: $--fs-800;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls--15;
+      }
+      @include for-mobile() {
+        font-size: $--fs-600;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls-048;
+      }
+    }
+  }
+}
+.social-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  @include for-tablet() {
+    bottom: 48px;
+  }
+  .subtitle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    @include for-tablet() {
+      bottom: 24px;
+      span {
+        font-size: $--fs-200;
+        font-weight: $--sb-weight;
+        line-height: $--l-h-18;
+        letter-spacing: $--ls-015;
+      }
+    }
+  }
+  .social-media-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .social-media-item {
+      padding: 0 18px;
+      transition: all 0.2s ease-in-out 0s;
+      &:hover {
+        transform: $--hover-effect-moveUp;
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+.text-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+  position: relative;
+  @include for-mobile() {
+    flex-direction: column;
+    padding-bottom: 48px;
+  }
+  .text--column {
+    flex: 50%;
+    @include for-mobile() {
+      flex: 100%;
+    }
+    .subtitle-wrapper {
+      padding-bottom: 8px;
+      .subtitle--large {
+        color: $grey;
+        @include for-mobile() {
+          font-size: $--fs-200;
+          font-weight: $--sb-weight;
+          line-height: $--l-h-18;
+          letter-spacing: $--ls-015;
+        }
+      }
+    }
+    .h2 {
+      padding-bottom: 24px;
+      @include for-mobile() {
+        font-size: $--fs-600;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls-048;
+      }
+    }
+  }
+  .text--column {
+    flex: 50%;
+    .subtitle {
+      color: $grey;
+    }
+  }
+  .text--column__left {
+    padding-right: 100px;
+    @include for-mobile() {
+      padding-right: 0;
+    }
+    @include for-tablet() {
+      padding-right: 48px;
+    }
+    p {
+      padding-bottom: 16px;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+    .contact-list-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 48px;
+      @include for-tablet() {
+        padding-top: 36px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contact-list {
+        @include for-tablet() {
+          padding-bottom: 24px;
+        }
+        .subtitle-wrapper {
+          padding-bottom: 16px;
+          .subtitle--large {
+            color: $black;
+            font-size: $--fs-300;
+            font-weight: $--sb-weight;
+            line-height: $--l-h-20;
+            letter-spacing: $--ls-015;
+          }
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            padding-bottom: 6px;
+            background-image: linear-gradient(
+              to right,
+              rgba(41, 89, 153, 1) 50%,
+              $black 50%
+            );
+            background-size: 200% 100%;
+            background-position: 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: $link-hover-left-right-contact;
+            &:hover {
+              background-position: 0%;
+              transition: $link-hover-left-right-contact;
+            }
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+      .profile-img {
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 100%;
+          border: 2px solid $light-grey;
+        }
+      }
+    }
+  }
+  .divider {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 75px;
+    border-left: 0.5px solid $light-grey;
+    @include for-mobile() {
+      position: static;
+      border: 0.5px solid $light-grey;
+      border-left: none;
+      margin: 75px 0;
+    }
+  }
+  .text--column__right {
+    padding-left: 100px;
+    @include for-mobile() {
+      padding-left: 0;
+    }
+    .experience-list {
+      padding-bottom: 48px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      .work {
+        padding-bottom: 24px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+      h4 {
+        padding-bottom: 8px;
+        font-size: $--fs-400;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls-015;
+      }
+      .work-role {
+        color: $black;
+        @include for-mobile() {
+          display: block;
+          padding-bottom: 8px;
+        }
+        &::after {
+          content: "•";
+          padding: 0 6px;
+          @include for-mobile() {
+            content: none;
+            padding: 0;
+          }
+        }
+      }
+      .date {
+        font-size: $--fs-200;
+        color: $dark-grey;
+        letter-spacing: $--ls-015;
+        @include for-mobile() {
+          font-size: $--fs-100;
+          font-weight: $--r-weight;
+          line-height: $--l-h-18;
+        }
+      }
+      .work-description {
+        padding-top: 16px;
+      }
+    }
+    .skills-section {
+      h4 {
+        padding-bottom: 16px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 24px;
+        padding-bottom: 24px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+    .language-section {
+      .language {
+        padding-bottom: 24px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.back-to-top-btn {
+  @include for-mobile() {
+    bottom: 48px;
+  }
+}

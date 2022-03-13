@@ -1,0 +1,419 @@
+@mixin sectionPadding {
+  padding: 75px 0;
+}
+
+@mixin fullImage {
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@mixin transition200 {
+  transition: $--transition-200;
+}
+
+@mixin transition300 {
+  transition: $--transition-300;
+}
+
+@mixin transition500 {
+  transition: $--transition-500;
+}
+
+// Media Queries
+
+@mixin for-mobile {
+  @media only screen and (max-width: $--medium) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media only screen and (max-width: $--large) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media only screen and (max-width: $--x-large) {
+    @content;
+  }
+}
+
+@mixin for-large-desktops {
+  @media only screen and (max-width: $--xx--large) {
+    @content;
+  }
+}
+
+// Scrollbar
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
+  // Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+// custom scroll-bar
+@mixin custom-scroll-bar() {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb;
+    &:hover {
+      background-color: $grey;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $light-grey;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+}
+
+// Color System Swatches
+
+@mixin onetwoid-color-system() {
+  .onetwoid-blue {
+    background-color: $onetwoid-blue;
+  }
+  .onetwoid-light-blue {
+    background-color: #4dabfe;
+  }
+  .onetwoid-green {
+    background-color: #24d27f;
+  }
+  .onetwoid-yellow {
+    background-color: #ffb900;
+  }
+  .onetwoid-red {
+    background-color: #e1444d;
+  }
+  .onetwoid-black {
+    background-color: #222222;
+  }
+  .onetwoid-grey {
+    background-color: #cfcfcf;
+  }
+  .onetwoid-light-grey {
+    background-color: #eeeeee;
+  }
+}
+
+@mixin giwautopart-color-system() {
+  .giwautopart-blue {
+    background-color: #00334e;
+  }
+  .giwautopart-light-blue {
+    background-color: #e1e6e9;
+  }
+  .giwautopart-green {
+    background-color: #019645;
+  }
+  .giwautopart-yellow {
+    background-color: #ffc168;
+  }
+  .giwautopart-red {
+    background-color: #c90f23;
+  }
+  .giwautopart-black {
+    background-color: #333333;
+  }
+  .giwautopart-grey {
+    background-color: #777777;
+  }
+  .giwautopart-light-grey {
+    background-color: #f7f7f7;
+  }
+}
+
+@mixin listd-color-system() {
+  .listd-pink {
+    background-color: #fd746c;
+  }
+  .listd-orange {
+    background-color: #fe8e66;
+  }
+  .listd-black {
+    background-color: #333333;
+  }
+  .listd-grey {
+    background-color: #8a8a8a;
+  }
+  .listd-light-grey {
+    background-color: #f1f1f1;
+  }
+  .listd-white {
+    background-color: #ffffff;
+    border: 1px solid $light-grey;
+  }
+}
+
+@mixin geosty-color-system() {
+  .geosty-darkBlue {
+    background-color: #356c80;
+  }
+  .geosty-lightBlue {
+    background-color: #39bbe7;
+  }
+  .geosty-black {
+    background-color: #000000;
+  }
+  .geosty-darkGrey {
+    background-color: #636867;
+  }
+  .geosty-grey {
+    background-color: #b1b3b3;
+  }
+  .geosty-light-grey {
+    background-color: #eff0f0;
+  }
+  .geosty-white {
+    background-color: #ffffff;
+    border: 1px solid $light-grey;
+  }
+}
+
+@mixin ica-color-system() {
+  .ica-red {
+    background-color: #e3000b;
+  }
+  .ica-lightBlue {
+    background-color: #22a9fd;
+  }
+  .ica-green {
+    background-color: #5ebc86;
+  }
+  .ica-black {
+    background-color: #222222;
+  }
+  .ica-darkGrey {
+    background-color: #666666;
+  }
+  .ica-lightGrey {
+    background-color: #f2f2f2;
+  }
+  .ica-white {
+    background-color: #ffffff;
+    border: 1px solid $light-grey;
+  }
+}
+
+@mixin scana-color-system() {
+  .scana-green {
+    background-color: #88ada1;
+  }
+  .scana-red {
+    background-color: #cd3333;
+  }
+  .scana-yellow {
+    background-color: #ffc473;
+  }
+  .scana-black {
+    background-color: #222222;
+  }
+  .scana-darkGrey {
+    background-color: #616161;
+  }
+  .scana-lightGrey {
+    background-color: #eeeeee;
+  }
+  .scana-white {
+    background-color: #ffffff;
+    border: 1px solid $light-grey;
+  }
+}
+
+@mixin bevera-color-system() {
+  .bevera-gold {
+    background-color: #BBAC78;
+  }
+  .bevera-wineRed {
+    background-color: #603D4C;
+  }
+  .bevera-green {
+    background-color: #4B9560;
+  }
+  .bevera-black {
+    background-color: #222222;
+  }
+  .bevera-darkGrey {
+    background-color: #888888;
+  }
+  .bevera-grey {
+    background-color: #CECECE;
+  }
+  .bevera-lightGrey {
+    background-color: #F2F2F2;
+  }
+  .bevera-white {
+    background-color: #ffffff;
+    border: 1px solid $light-grey;
+  }
+}
+
+@mixin techflake-color-system() {
+  .techflake-green {
+    background-color: #20BD67;
+  }
+  .techflake-darkGreen {
+    background-color: #199450;
+  }
+  .techflake-black {
+    background-color: #222222;
+  }
+  .techflake-darkGrey {
+    background-color: #888888;
+  }
+  .techflake-grey {
+    background-color: #E0E0E0;
+  }
+  .techflake-lightGrey {
+    background-color: #FAFAFA;
+  }
+  .techflake-white {
+    background-color: #ffffff;
+    border: 1px solid $light-grey;
+  }
+}
+
+// Typography
+@mixin onetwoid-typography() {
+  .catamaran-bold {
+    font-size: $--fs-300;
+    font-weight: $--b-weight;
+    color: $dark-grey;
+  }
+  .catamaran-semiBold {
+    font-size: $--fs-300;
+    font-weight: $--sb-weight;
+    color: $dark-grey;
+  }
+  .catamaran-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
+@mixin giwautopart-typography() {
+  .assistant-bold {
+    font-size: $--fs-300;
+    font-weight: $--b-weight;
+    color: $dark-grey;
+  }
+  .openSans-Bold {
+    font-size: $--fs-300;
+    font-weight: $--b-weight;
+    color: $dark-grey;
+  }
+  .openSans-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
+@mixin listd-typography() {
+  .roboto-bold {
+    font-size: $--fs-300;
+    font-weight: $--b-weight;
+    color: $dark-grey;
+  }
+  .roboto-medium {
+    font-size: $--fs-300;
+    font-weight: $--m-weight;
+    color: $dark-grey;
+  }
+  .roboto-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
+@mixin geosty-typography() {
+  .nunitoSans-semiBold {
+    font-size: $--fs-300;
+    font-weight: $--sb-weight;
+    color: $dark-grey;
+  }
+  .nunitoSans-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
+@mixin ica-typography() {
+  .workSans-semiBold {
+    font-size: $--fs-300;
+    font-weight: $--sb-weight;
+    color: $dark-grey;
+  }
+  .workSans-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
+@mixin scana-typography() {
+  .posterama-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+  .openSans-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
+@mixin bevera-typography() {
+  .raleway-semiBold {
+    font-size: $--fs-300;
+    font-weight: $--sb-weight;
+    color: $dark-grey;
+  }
+  .raleway-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
+@mixin techflake-typography() {
+  .lato-bold {
+    font-size: $--fs-300;
+    font-weight: $--b-weight;
+    color: $dark-grey;
+  }
+  .lato-regular {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}

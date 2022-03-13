@@ -1,0 +1,39 @@
+.content-wrapper.error-404 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: $--fs-900;
+      font-weight: $--b-weight;
+      letter-spacing: $--ls--05;
+      @include for-mobile() {
+        font-size: $--fs-800;
+      }
+    }
+    h2 {
+      margin-bottom: 24px;
+      @include for-mobile() {
+        font-size: $--fs-600;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls-048;
+      }
+    }
+    p {
+      margin-bottom: 24px;
+      @include for-mobile() {
+        text-align: center;
+      }
+    }
+  }
+}

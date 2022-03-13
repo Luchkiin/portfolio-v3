@@ -1,0 +1,95 @@
+/* Font
+******************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@font-face {
+  font-family: "Posterama-2001-W04-Regular";
+  src: url("../fonts/Posterama-2001-W04-Regular/Posterama-2001-W04-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Font Family
+******************************************************/
+
+$--font-family: 'Inter', sans-serif;
+$--font-family-catamaran: 'Catamaran', sans-serif;
+$--font-family-assistant: 'Assistant', sans-serif;
+$--font-family-openSans: 'Open Sans', sans-serif;
+$--font-family-roboto: 'Roboto', sans-serif;
+$--font-family-nunitoSans: 'Nunito Sans', sans-serif;
+$--font-family-workSans: 'Work Sans', sans-serif;
+$--font-family-posterama: 'Posterama-2001-W04-Regular';
+$--font-family-raleway: 'Raleway', sans-serif;
+$--font-family-lato: 'Lato', sans-serif;
+
+/* Font Sizes
+******************************************************/
+
+$--fs-100: 0.75rem; //12 px
+$--fs-200: 0.875rem; // 14px
+$--fs-300: 1rem; // 16px
+$--fs-400: 1.125rem; // 18 px
+$--fs-500: 1.25rem; // 20px
+$--fs-600: 1.5rem; // 24px
+$--fs-700: 2rem; // 32px
+$--fs-800: 3rem; // 48 px
+$--fs-900: 4.5rem; // 72 px
+
+/* Font Weights
+******************************************************/
+
+$--r-weight: 400; // Regular
+$--m-weight: 500; // Medium
+$--sb-weight: 600; // SemiBold
+$--b-weight: 700; // Bold
+
+/* Line Heights
+******************************************************/
+
+$--l-h-18: 18px;
+$--l-h-20: 20px;
+$--l-h-22: 22px;
+$--l-h-24: 24px;
+$--l-h-27: 27px;
+$--l-h-29: 29px;
+$--l-h-32: 32px;
+
+/* Letter Spacings
+******************************************************/
+
+$--ls--05: -0.5px;
+$--ls--15: -1.5px;
+$--ls-015: 0.15px;
+$--ls-025: 0.25px;
+$--ls-048: 0.48px;
+
+/* Text Alignment
+******************************************************/
+
+$--text-center: center;
+$--text-left: left;
+$--text-right: right;
+
+/* Text Transforms
+******************************************************/
+
+$--uppercase: uppercase;
+$--lowercase: lowercase;
+$--capitalize: capitalize;
+$--italic: italic;
+$--underline: underline;
+$--line-through: line-through;
+$--no-underline: none;
+$--list-style-none: none;
