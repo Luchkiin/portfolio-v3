@@ -10,7 +10,7 @@
 
 ## Built With
 * HTML
-* CSS
+* SCSS
 * JavaScript
 
 ## Contact
