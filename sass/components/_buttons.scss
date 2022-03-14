@@ -11,7 +11,7 @@ input [type="button"] {
   font-size: $--fs-200;
   font-weight: $--sb-weight;
   -webkit-text-decoration: $--no-underline;
-          text-decoration: $--no-underline;
+  text-decoration: $--no-underline;
   white-space: nowrap;
   border-radius: $--button-radius;
   cursor: pointer;
@@ -19,7 +19,9 @@ input [type="button"] {
   font: inherit;
   border: none;
   margin: 0;
-  &:hover,
+  @include hover-supported() {
+    outline: 0;
+  }
   &:active,
   &:focus {
     outline: 0;
@@ -31,7 +33,9 @@ input [type="button"] {
 }
 
 .btn:hover {
-  transition: $--transition-250;
+  @include hover-supported() {
+    transition: $--transition-250;
+  }
 }
 
 .btn-wrapper {
@@ -43,7 +47,7 @@ input [type="button"] {
     background-color: $petrol;
     color: $white;
     display: inline-block;
-    &:hover {
+    @include hover-supported() {
       opacity: 0.9;
     }
   }
@@ -55,7 +59,7 @@ input [type="button"] {
   display: inline-block;
   border: 1px solid $black;
   margin: 0;
-  &:hover {
+  @include hover-supported() {
     background-color: $black;
     color: $white;
     border: 1px solid $black;
@@ -83,8 +87,8 @@ input [type="button"] {
     bottom: 75px;
     right: 24px;
   }
-  &:hover {
-    transition: all 250ms ease-out;
+  @include hover-supported() {
+    transition: $--transition-250;
   }
   .icon-wrapper {
     width: 100%;

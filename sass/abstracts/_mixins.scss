@@ -73,7 +73,7 @@
   }
 }
 
-// custom scroll-bar
+// Custom scroll-bar
 @mixin custom-scroll-bar() {
   &::-webkit-scrollbar {
     width: 8px;
@@ -91,6 +91,17 @@
     border-radius: 8px;
   }
 }
+
+
+// Hover
+@mixin hover-supported {
+  @media not all and (hover: none) {
+      &:hover {
+          @content;
+      }
+  }
+}
+
 
 // Color System Swatches
 

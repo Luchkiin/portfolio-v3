@@ -24,14 +24,17 @@
     @include for-mobile() {
       margin-bottom: 12px;
     }
-    &:hover .work-overlay {
-      opacity: 1;
+    @include hover-supported() {
+      .work-overlay {
+        opacity: 1;
+      }
     }
-
-    &:hover .work-overlay__details {
-      top: 0;
-      left: 0;
-      opacity: 1;
+    @include hover-supported() {
+      .work-overlay__details {
+        top: 0;
+        left: 0;
+        opacity: 1;
+      }
     }
     .work-overlay {
       background: $black;

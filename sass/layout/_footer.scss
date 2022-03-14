@@ -1,25 +1,25 @@
 .footer-work {
-    padding: 150px 0;
-    @include for-mobile() {
-        padding: 100px 0;
+  padding: 150px 0;
+  @include for-mobile() {
+    padding: 100px 0;
+  }
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .back-to-work {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: $--transition-250;
+      @include hover-supported() {
+        transform: $--hover-effect-moveUp;
       }
-    .footer-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    .back-to-work {
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: $--transition-250;
-            &:hover {
-                transform: $--hover-effect-moveUp;
-            }
-        }
-        img {
-            margin-right: 24px;
-        }
+    img {
+      margin-right: 24px;
     }
+  }
 }

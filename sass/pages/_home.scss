@@ -45,7 +45,7 @@
       .social-media-item {
         padding-right: 36px;
         transition: all 0.2s ease-in-out 0s;
-        &:hover {
+        @include hover-supported() {
           transform: $--hover-effect-moveUp;
         }
       }

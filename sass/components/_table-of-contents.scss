@@ -48,7 +48,9 @@ main > .sidebar-nav-wrapper {
     color: $grey;
     transition: all 50ms ease-in-out;
     font-weight: $--m-weight;
-    &:hover,
+    @include hover-supported() {
+      color: $black;
+    }
     &:focus {
       color: $black;
     }

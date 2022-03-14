@@ -93,7 +93,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: $link-hover-left-right-contact;
-            &:hover {
+            @include hover-supported() {
               background-position: 0%;
               transition: $link-hover-left-right-contact;
             }

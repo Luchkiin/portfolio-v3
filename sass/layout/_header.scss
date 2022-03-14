@@ -1,32 +1,32 @@
 .header {
-    padding: 48px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include for-desktop () {
-        padding: 48px;
-    }
-    @include for-tablet () {
-        padding: 24px;
-    }
+  padding: 48px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include for-desktop() {
+    padding: 48px;
+  }
+  @include for-tablet() {
+    padding: 24px;
+  }
 }
 
 .header__logo-wrapper {
-    transition: $--transition-250;
-    z-index: 3;
-    &:hover {
-      transform: $--hover-effect-moveUp;
-      opacity: .8;
+  transition: $--transition-250;
+  z-index: 3;
+  @include hover-supported() {
+    transform: $--hover-effect-moveUp;
+    opacity: 0.8;
   }
-    .logo__desktop {
-        @include for-mobile () {
-            display: none;
-        }
+  .logo__desktop {
+    @include for-mobile() {
+      display: none;
     }
-    .logo__mobile {
-        display: none;
-        @include for-mobile () {
-            display: block;
-        }
+  }
+  .logo__mobile {
+    display: none;
+    @include for-mobile() {
+      display: block;
     }
+  }
 }
