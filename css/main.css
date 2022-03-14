@@ -1032,9 +1032,9 @@ input [type="button"]:focus {
   transition: color 500ms ease-out;
 }
 
-.work-filter-wrapper .filter-tabs .filter-tab:first-child.active ~ .filter-underline {
-  -webkit-transform: translateX(0) scaleX(25%);
-          transform: translateX(0) scaleX(25%);
+.work-filter-wrapper .filter-tabs .filter-tab:nth-child(1).active ~ .filter-underline {
+  -webkit-transform: translateX(0%) scaleX(0.25);
+          transform: translateX(0%) scaleX(0.25);
 }
 
 .work-filter-wrapper .filter-tabs .filter-tab:nth-child(2).active ~ .filter-underline {

@@ -42,8 +42,8 @@
         color: $black;
         transition: color 500ms ease-out;
       }
-      &:first-child.active ~ .filter-underline {
-        transform: translateX(0) scaleX(25%);
+      &:nth-child(1).active ~ .filter-underline {
+        transform: translateX(0%) scaleX(0.25);  
       }
       &:nth-child(2).active ~ .filter-underline {
         transform: translateX(25%) scaleX(0.25);
