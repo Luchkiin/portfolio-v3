@@ -1022,7 +1022,7 @@ input [type="button"]:focus {
 
 @media only screen and (max-width: 768px) {
   .work-filter-wrapper .filter-tabs .filter-tab {
-    padding: 16px;
+    padding: 16px 6px;
   }
 }
 
