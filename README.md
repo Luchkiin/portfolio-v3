@@ -10,8 +10,8 @@
 
 ## Built With
 * HTML
-* CSS
+* SCSS
 * JavaScript
 
 ## Contact
-* :email: <a href="mailto:lr@lucasrosendahl.com">lr@lucasrosendahl.com</a>
+* <a href="mailto:lr@lucasrosendahl.com">lr@lucasrosendahl.com</a>
