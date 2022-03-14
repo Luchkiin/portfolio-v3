@@ -1,49 +1,49 @@
 /*----------------------------------------------------*/
 /* Cookie Consent Banner
     ------------------------------------------------------ */
-const cookieStorage = {
-  getItem: (key) => {
-    const cookies = document.cookie
-      .split(";")
-      .map((cookie) => cookie.split("="))
-      .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
-    return cookies[key];
-  },
-  setItem: (key, value) => {
-    document.cookie = `${key}=${value}`;
-  },
-};
+    const cookieStorage = {
+      getItem: (key) => {
+        const cookies = document.cookie
+          .split(";")
+          .map((cookie) => cookie.split("="))
+          .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
+        return cookies[key];
+      },
+      setItem: (key, value) => {
+        document.cookie = `${key}=${value}`;
+      },
+    };
+    
+    const storageType = cookieStorage;
+    const consentPropertyName = "CookieConsent";
+    
+    const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+    const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+    
+    window.onload = () => {
+      const consentPopup = document.getElementById("consent-popup");
+      const acceptBtn = document.getElementById("cta-consent-accept");
+      const declineBtn = document.getElementById("cta-consent-decline");
+    
+      const acceptFn = (event) => {
+        saveToStorage(storageType);
+        consentPopup.classList.add("consent-popup-hidden");
+      };
 
-const storageType = cookieStorage;
-const consentPropertyName = "CookieConsent";
-
-const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-const saveToStorage = () => storageType.setItem(consentPropertyName, true);
-
-window.onload = () => {
-  const consentPopup = document.getElementById("consent-popup");
-  const acceptBtn = document.getElementById("cta-consent-accept");
-  const declineBtn = document.getElementById("cta-consent-decline");
-
-  const acceptFn = (event) => {
-    saveToStorage(storageType);
-    consentPopup.classList.add("consent-popup-hidden");
-  };
-
-  const declineFn = (event) => {
-    saveToStorage(storageType);
-    consentPopup.classList.add("consent-popup-hidden");
-  };
-
-  acceptBtn.addEventListener("click", acceptFn);
-  declineBtn.addEventListener("click", declineFn);
-
-  if (shouldShowPopup()) {
-    setTimeout(() => {
-      consentPopup.classList.remove("consent-popup-hidden");
-    }, 5000);
-  }
-};
+      const declineFn = (event) => {
+        saveToStorage(storageType);
+        consentPopup.classList.add("consent-popup-hidden");
+      };
+    
+      acceptBtn.addEventListener("click", acceptFn);
+      declineBtn.addEventListener("click", declineFn);
+    
+      if (shouldShowPopup()) {
+        setTimeout(() => {
+          consentPopup.classList.remove("consent-popup-hidden");
+        }, 5000);
+      }
+    };
 
 jQuery(document).ready(function ($) {
   // Preloader
