@@ -1958,6 +1958,8 @@ main > .sidebar-nav-wrapper {
 
 .social-container .social-media-list .social-media-item {
   padding: 0 18px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 @media not all and (hover: none) {

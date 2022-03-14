@@ -95,6 +95,7 @@
     justify-content: center;
     .social-media-item {
       padding: 0 18px;
+      transition: all 0.2s ease-in-out 0s;
       @include hover-supported() {
         transform: $--hover-effect-moveUp;
       }
