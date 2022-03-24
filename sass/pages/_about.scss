@@ -147,6 +147,12 @@
         font-size: $--fs-400;
         font-weight: $--sb-weight;
         letter-spacing: $--ls-015;
+        a {
+          &:hover {
+            text-decoration: underline;
+            color: $blue;
+          }
+        }
       }
       .work-role {
         color: $black;

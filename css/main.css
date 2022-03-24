@@ -1737,6 +1737,11 @@ main > .sidebar-nav-wrapper {
   letter-spacing: 0.15px;
 }
 
+.text-row-wrapper .text--column__right .experience-list h4 a:hover {
+  text-decoration: underline;
+  color: #295999;
+}
+
 .text-row-wrapper .text--column__right .experience-list .work-role {
   color: #000000;
 }
