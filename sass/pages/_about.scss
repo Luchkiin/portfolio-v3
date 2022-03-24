@@ -149,8 +149,8 @@
         letter-spacing: $--ls-015;
         a {
           &:hover {
-            text-decoration: underline;
             color: $blue;
+            transition: all 250ms ease-out;
           }
         }
       }
