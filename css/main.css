@@ -269,7 +269,7 @@ a.link.link--large {
   font-weight: 500;
   line-height: 29px;
   letter-spacing: 0.25px;
-  color: #295999;
+  color: #256265;
   text-decoration: none;
 }
 
@@ -278,7 +278,7 @@ a.link.link--small {
   font-weight: 500;
   line-height: 27px;
   letter-spacing: 0.25px;
-  color: #295999;
+  color: #256265;
   text-decoration: none;
 }
 
@@ -560,8 +560,8 @@ p {
 
 .navigation .navigation-list-wrapper .navigation-list li {
   margin: 48px 0;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #295999), color-stop(50%, #000000));
-  background-image: linear-gradient(to right, #295999 50%, #000000 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #256265), color-stop(50%, #000000));
+  background-image: linear-gradient(to right, #256265 50%, #000000 50%);
   background-size: 200% 100%;
   background-position: 100%;
   text-decoration: none;
@@ -1658,8 +1658,8 @@ main > .sidebar-nav-wrapper {
 
 .text-row-wrapper .text--column__left .contact-list-wrapper .contact-list ul li {
   padding-bottom: 6px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #295999), color-stop(50%, #000000));
-  background-image: linear-gradient(to right, #295999 50%, #000000 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #256265), color-stop(50%, #000000));
+  background-image: linear-gradient(to right, #256265 50%, #000000 50%);
   background-size: 200% 100%;
   background-position: 100%;
   -webkit-background-clip: text;
@@ -1738,8 +1738,9 @@ main > .sidebar-nav-wrapper {
 }
 
 .text-row-wrapper .text--column__right .experience-list h4 a:hover {
-  text-decoration: underline;
-  color: #295999;
+  color: #256265;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
 }
 
 .text-row-wrapper .text--column__right .experience-list .work-role {
@@ -1861,8 +1862,8 @@ main > .sidebar-nav-wrapper {
   font-weight: 700;
   letter-spacing: -0.5px;
   color: #000000;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #295999), color-stop(50%, #000000));
-  background-image: linear-gradient(to right, #295999 50%, #000000 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #256265), color-stop(50%, #000000));
+  background-image: linear-gradient(to right, #256265 50%, #000000 50%);
   background-size: 200% 100%;
   background-position: 100%;
   text-decoration: none;
