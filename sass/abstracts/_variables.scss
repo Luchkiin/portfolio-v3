@@ -1,8 +1,7 @@
 /* Transitions & Transforms
 ******************************************************/
-$--transition-250: all 250ms ease;
-$--transition-500: all 500ms ease;
-$--transition-750: all 750ms ease;
+$--transition-250: all 250ms ease-out;
+$--transition-500: all 500ms ease-out;
 $--menu-from-above-down: translateY(-100%);
 $--menu-from-above-up: translateY(0);
 $--menu-speed-down-up: 750ms;
