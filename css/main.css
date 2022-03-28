@@ -658,8 +658,8 @@ p {
 }
 
 .header__logo-wrapper {
-  -webkit-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
   z-index: 3;
 }
 
@@ -719,8 +719,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
 }
 
 @media not all and (hover: none) {
@@ -785,8 +785,8 @@ input [type="button"]:focus {
 
 @media not all and (hover: none) {
   .btn:hover:hover {
-    -webkit-transition: all 250ms ease-out;
-    transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
   }
 }
 
@@ -856,8 +856,8 @@ input [type="button"]:focus {
 
 @media not all and (hover: none) {
   .back-to-top-btn:hover {
-    -webkit-transition: all 250ms ease-out;
-    transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
   }
 }
 
