@@ -1,7 +1,7 @@
 /* Transitions & Transforms
 ******************************************************/
-$--transition-250: all 250ms ease-out;
-$--transition-500: all 500ms ease-out;
+$--transition-250: all 250ms ease;
+$--transition-500: all 500ms ease;
 $--menu-from-above-down: translateY(-100%);
 $--menu-from-above-up: translateY(0);
 $--menu-speed-down-up: 750ms;
@@ -13,7 +13,7 @@ $link-hover-left-right-menu: 0.75s cubic-bezier(0.7, 0.3, 0, 1);
 ******************************************************/
 $z-index: (
   base: 1,
-  1: 100, // Base level
+  1: 100,
   2: 200,
   3: 300,
   4: 400,
@@ -26,6 +26,5 @@ $z-index: (
 
 /* Border Radius
 ******************************************************/
-
 $--button-radius: 6px;
 

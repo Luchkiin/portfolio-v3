@@ -102,6 +102,14 @@
   }
 }
 
+@mixin hover-supported-all {
+  @media not all and (hover: none) {
+      &:hover * {
+          @content;
+      }
+  }
+}
+
 
 // Color System Swatches
 
