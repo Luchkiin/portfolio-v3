@@ -1,4 +1,3 @@
-
 /*----------------------------------------------------*/
 /* NProgress
     ------------------------------------------------------ */
@@ -57,23 +56,20 @@ window.onload = () => {
 };
 
 jQuery(document).ready(function ($) {
-  // Preloader
-  /* 
-  $(window).on(function () {
-    function Preloader() {
-      var preloader = $(".loader");
-      preloader.delay(1000).fadeOut(500);
-      var preloader = $(".preloader");
-      preloader.delay(1500).slideUp(500);
-    }
-    if (!sessionStorage.getItem("doNotShow")) {
-      sessionStorage.setItem("doNotShow", "true");
-      Preloader();
-    } else {
-      $(".loader, .preloader").hide();
-    }
-  });
-  */
+  /*----------------------------------------------------*/
+  /* Preloader
+    ------------------------------------------------------ */
+  function preloader() {
+    var preloader = $("#preloader");
+    preloader.show();
+    preloader.delay(5000).fadeOut(500);
+  }
+  if (!sessionStorage.getItem("doNotShow")) {
+    sessionStorage.setItem("doNotShow", true);
+    preloader();
+  } else {
+    $("#preloader").hide();
+  }
 
   // Top Navigation
   $(".menu-toggle").on("click", function () {
