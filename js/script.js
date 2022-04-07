@@ -1,60 +1,3 @@
-/*----------------------------------------------------*/
-/* NProgress
-    ------------------------------------------------------ */
-NProgress.start();
-NProgress.set(0.4); // To set a progress percentage, call .set(n), where n is a number between 0..1
-NProgress.inc(); // To increment the progress bar, just use .inc(). This increments it with a random amount. This will never get to 100%: use it for every image load (or similar).If you want to increment by a specific value, you can pass that as a parameter
-NProgress.configure({ ease: "ease", speed: 1500 }); // Adjust animation settings using easing (a CSS easing string) and speed (in ms). (default: ease and 200)
-NProgress.configure({ parent: ".container" }); //specify this to change the parent container. (default: body)
-NProgress.done();
-
-/*----------------------------------------------------*/
-/* Cookie Consent Banner
-    ------------------------------------------------------ */
-const cookieStorage = {
-  getItem: (key) => {
-    const cookies = document.cookie
-      .split(";")
-      .map((cookie) => cookie.split("="))
-      .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
-    return cookies[key];
-  },
-  setItem: (key, value) => {
-    document.cookie = `${key}=${value}`;
-  },
-};
-
-const storageType = cookieStorage;
-const consentPropertyName = "CookieConsent";
-
-const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-const saveToStorage = () => storageType.setItem(consentPropertyName, true);
-
-window.onload = () => {
-  const consentPopup = document.getElementById("consent-popup");
-  const acceptBtn = document.getElementById("cta-consent-accept");
-  const declineBtn = document.getElementById("cta-consent-decline");
-
-  const acceptFn = (event) => {
-    saveToStorage(storageType);
-    consentPopup.classList.add("consent-popup-hidden");
-  };
-
-  const declineFn = (event) => {
-    saveToStorage(storageType);
-    consentPopup.classList.add("consent-popup-hidden");
-  };
-
-  acceptBtn.addEventListener("click", acceptFn);
-  declineBtn.addEventListener("click", declineFn);
-
-  if (shouldShowPopup()) {
-    setTimeout(() => {
-      consentPopup.classList.remove("consent-popup-hidden");
-    }, 7000);
-  }
-};
-
 jQuery(document).ready(function ($) {
   /*----------------------------------------------------*/
   /* Preloader
@@ -196,3 +139,60 @@ jQuery(document).ready(function ($) {
     history.replaceState("", document.title, e.originalEvent.oldURL);
   });
 });
+
+/*----------------------------------------------------*/
+/* NProgress
+    ------------------------------------------------------ */
+NProgress.start();
+NProgress.set(0.4); // To set a progress percentage, call .set(n), where n is a number between 0..1
+NProgress.inc(); // To increment the progress bar, just use .inc(). This increments it with a random amount. This will never get to 100%: use it for every image load (or similar).If you want to increment by a specific value, you can pass that as a parameter
+NProgress.configure({ ease: "ease", speed: 1500 }); // Adjust animation settings using easing (a CSS easing string) and speed (in ms). (default: ease and 200)
+NProgress.configure({ parent: ".container" }); //specify this to change the parent container. (default: body)
+NProgress.done();
+
+/*----------------------------------------------------*/
+/* Cookie Consent Banner
+        ------------------------------------------------------ */
+const cookieStorage = {
+  getItem: (key) => {
+    const cookies = document.cookie
+      .split(";")
+      .map((cookie) => cookie.split("="))
+      .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
+    return cookies[key];
+  },
+  setItem: (key, value) => {
+    document.cookie = `${key}=${value}`;
+  },
+};
+
+const storageType = cookieStorage;
+const consentPropertyName = "CookieConsent";
+
+const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+
+window.onload = () => {
+  const consentPopup = document.getElementById("consent-popup");
+  const acceptBtn = document.getElementById("cta-consent-accept");
+  const declineBtn = document.getElementById("cta-consent-decline");
+
+  const acceptFn = (event) => {
+    saveToStorage(storageType);
+    consentPopup.classList.add("consent-popup-hidden");
+  };
+
+  const declineFn = (event) => {
+    saveToStorage(storageType);
+    consentPopup.classList.add("consent-popup-hidden");
+  };
+
+  acceptBtn.addEventListener("click", acceptFn);
+  declineBtn.addEventListener("click", declineFn);
+
+  if (shouldShowPopup()) {
+    setTimeout(() => {
+      consentPopup.classList.remove("consent-popup-hidden");
+    }, 7000);
+  }
+};
