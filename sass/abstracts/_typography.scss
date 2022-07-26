@@ -1,15 +1,16 @@
 /* Font
 ******************************************************/
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @font-face {
   font-family: "Posterama-2001-W04-Regular";
   src: url("../fonts/Posterama-2001-W04-Regular/Posterama-2001-W04-Regular.woff")
@@ -18,21 +19,29 @@
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: "Reckless";
+  src: url("../fonts/Reckless/Reckless-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* Font Family
 ******************************************************/
 
-$--font-family: 'Inter', sans-serif;
-$--font-family-catamaran: 'Catamaran', sans-serif;
-$--font-family-assistant: 'Assistant', sans-serif;
-$--font-family-openSans: 'Open Sans', sans-serif;
-$--font-family-roboto: 'Roboto', sans-serif;
-$--font-family-nunitoSans: 'Nunito Sans', sans-serif;
-$--font-family-workSans: 'Work Sans', sans-serif;
-$--font-family-posterama: 'Posterama-2001-W04-Regular';
-$--font-family-raleway: 'Raleway', sans-serif;
-$--font-family-lato: 'Lato', sans-serif;
+$--font-family-inter: "Inter", sans-serif;
+$--font-family-libre-bv: 'Libre Baskerville', serif;
+$--font-family-reckless: "Reckless-Regular";
+$--font-family-catamaran: "Catamaran", sans-serif;
+$--font-family-assistant: "Assistant", sans-serif;
+$--font-family-openSans: "Open Sans", sans-serif;
+$--font-family-roboto: "Roboto", sans-serif;
+$--font-family-nunitoSans: "Nunito Sans", sans-serif;
+$--font-family-workSans: "Work Sans", sans-serif;
+$--font-family-posterama: "Posterama-2001-W04-Regular";
+$--font-family-raleway: "Raleway", sans-serif;
+$--font-family-lato: "Lato", sans-serif;
 
 /* Font Sizes
 ******************************************************/
@@ -50,6 +59,7 @@ $--fs-900: 4.5rem; // 72 px
 /* Font Weights
 ******************************************************/
 
+$--l-weight: 300; // Light
 $--r-weight: 400; // Regular
 $--m-weight: 500; // Medium
 $--sb-weight: 600; // SemiBold
@@ -65,6 +75,7 @@ $--l-h-24: 24px;
 $--l-h-27: 27px;
 $--l-h-29: 29px;
 $--l-h-32: 32px;
+$--l-h-40: 40px;
 
 /* Letter Spacings
 ******************************************************/

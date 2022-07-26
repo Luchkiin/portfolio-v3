@@ -18,14 +18,14 @@
     margin-right: 100px;
     margin-left: 100px;
     @include for-tablet() {
-      margin-right: 75px;
-      margin-left: 75px;
+      margin-right: $--spacing-xxl;
+      margin-left: $--spacing-xxl;
     }
     @include for-mobile() {
       margin: 0 0 36px 0;
     }
     h2 {
-      margin-bottom: 24px;
+      margin-bottom: $--spacing-m;
       color: $grey;
       @include for-mobile() {
         font-size: $--fs-600;

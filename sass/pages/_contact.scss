@@ -66,21 +66,21 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 75px;
+  bottom: $--spacing-xxl;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   @include for-tablet() {
-    bottom: 48px;
+    bottom: $--spacing-xl;
   }
   .subtitle-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: $--spacing-m;
     @include for-tablet() {
-      bottom: 24px;
+      bottom: $--spacing-m;
       span {
         font-size: $--fs-200;
         font-weight: $--sb-weight;

@@ -1,12 +1,12 @@
 .menu-icon-wrapper {
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: $--spacing-xl;
+  height: $--spacing-xl;
   cursor: pointer;
   z-index: 3;
   @include for-mobile() {
-    width: 36px;
-    height: 36px;
+    width: $--spacing-l;
+    height: $--spacing-l;
   }
   .menu-icon__checkbox {
     display: block;
@@ -30,10 +30,10 @@
     right: 0;
     left: 0;
     bottom: 0;
-    width: 36px;
-    height: 16px;
+    width: $--spacing-l;
+    height: $--spacing-s;
     @include for-mobile() {
-      width: 24px;
+      width: $--spacing-m;
       height: 12px;
     }
   }
@@ -79,9 +79,9 @@
   &.active:hover span:last-of-type,
   &:hover .menu-icon__checkbox:checked + div span:first-of-type,
   &:hover .menu-icon__checkbox:checked + div span:last-of-type {
-    width: 36px;
+    width: $--spacing-l;
     @include for-mobile() {
-      width: 24px;
+      width: $--spacing-m;
     }
   }
 
@@ -93,7 +93,7 @@
       }
 
       span:last-of-type {
-        width: 24px;
+        width: $--spacing-m;
       }
     }
   }
@@ -141,7 +141,7 @@
       margin: 0;
       text-align: $--text-center;
       li {
-        margin: 48px 0;
+        margin: $--spacing-xl 0;
         background-image: linear-gradient(
           to right,
           #256265 50%,
@@ -154,7 +154,7 @@
         -webkit-text-fill-color: transparent;
         transition: $link-hover-left-right-menu;
         @include for-mobile() {
-          margin: 36px 0;
+          margin: $--spacing-l 0;
         }
         &:hover {
           background-position: 0%;
@@ -180,7 +180,7 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        bottom: 24px;
+        bottom: $--spacing-m;
         .social-media-item {
           padding: 0 18px;
         }

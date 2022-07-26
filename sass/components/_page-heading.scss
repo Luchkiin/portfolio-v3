@@ -3,12 +3,12 @@
     align-items: center;
     justify-content: center;
     padding-top: 27px;
-    margin-bottom: 75px;
+    margin-bottom: $--spacing-xxl;
     position: relative;
     z-index: 1;
     @include for-mobile() {
       padding-top: 12px;
-      margin-bottom: 48px;
+      margin-bottom: $--spacing-xl;
     }
     .left-aligned {
       position: absolute;

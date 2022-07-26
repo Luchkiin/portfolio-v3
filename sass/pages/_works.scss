@@ -10,7 +10,7 @@
   .back-to-top-btn {
     bottom: 161px;
     @include for-mobile() {
-      bottom: 48px;
+      bottom: $--spacing-xl;
     }
   }
 }

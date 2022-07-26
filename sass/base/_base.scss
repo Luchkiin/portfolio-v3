@@ -1,7 +1,7 @@
 // General Styles
 body {
   background-color: $white;
-  font-family: $--font-family;
+  font-family: $--font-family-inter;
   color: $black;
 }
 
@@ -10,16 +10,16 @@ body {
   margin: 0 auto;
   padding: 0 100px;
   @include for-desktop() {
-    padding: 0 48px;
+    padding: 0 $--spacing-xl;
   }
   @include for-tablet() {
-    padding: 0 24px;
+    padding: 0 $--spacing-m;
   }
 }
 
 .inner-wrapper {
   width: 100%;
-  max-width: 1420px;
+  max-width: $--max-width;
   margin: 0 auto;
   padding: 0;
 }
@@ -31,7 +31,7 @@ body {
 
 .content-wrapper.work {
   width: 100%;
-  max-width: 950px;
+  max-width: $--max-width-medium;
   margin: 0 auto;
   padding: 0;
 }
@@ -46,10 +46,10 @@ a {
 }
 
 section {
-  padding: 75px;
+  padding: $--spacing-xxl;
   position: relative;
   @include for-mobile() {
-    padding: 75px 0;
+    padding: $--spacing-xxl 0;
   }
 }
 
@@ -71,6 +71,24 @@ p {
   }
 }
 
+ul {
+  @include for-mobile() {
+    font-size: $--fs-200;
+  }
+}
+
+.p-margin-bottom {
+  margin-bottom: $--spacing-s;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
 .lock-scroll {
   overflow: hidden;
   -ms-overflow-style: none; // IE 11
@@ -84,7 +102,7 @@ p {
 
 #preloader {
   background: $petrol url("/images/preloader/loader.gif") no-repeat center center;
-  background-size: 750px !important;
+  background-size: $--max-width-small !important;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -94,3 +112,5 @@ p {
     background-size: 500px !important;
   }
 }
+
+

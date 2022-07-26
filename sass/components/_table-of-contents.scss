@@ -1,7 +1,7 @@
 main > .sidebar-nav-wrapper {
   position: -webkit-sticky;
   position: sticky;
-  top: 36px;
+  top: $--spacing-l;
   width: 200px;
   left: 0;
   z-index: 1;
@@ -15,21 +15,21 @@ main > .sidebar-nav-wrapper {
   padding-left: 0;
   background-color: $white;
   margin-top: 50px;
-  left: 8px;
+  left: $--spacing-xs;
   .sidebar-num {
     font-size: $--fs-800;
     font-weight: $--b-weight;
     letter-spacing: $--ls--05;
     color: $black;
     text-align: right;
-    padding: 36px 36px 16px 36px;
+    padding: $--spacing-l $--spacing-l $--spacing-s $--spacing-l;
     color: $gold;
     display: none;
   }
   ul {
     list-style: none;
     margin: 0;
-    padding: 36px;
+    padding: $--spacing-l;
   }
   li {
     text-align: right;

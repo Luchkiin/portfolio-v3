@@ -26,12 +26,12 @@
   }
   .left-section {
     padding-top: 100px;
-    padding-right: 24px;
+    padding-right: $--spacing-m;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     @include for-tablet() {
-      padding: 0 24px;
+      padding: 0 $--spacing-m;
       justify-content: center;
       align-items: center;
     }
@@ -43,7 +43,7 @@
         display: none;
       }
       .social-media-item {
-        padding-right: 36px;
+        padding-right: $--spacing-l;
         transition: all 0.2s ease-in-out 0s;
         @include hover-supported() {
           transform: $--hover-effect-moveUp;

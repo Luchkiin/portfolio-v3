@@ -22,7 +22,7 @@
       }
     }
     h2 {
-      margin-bottom: 24px;
+      margin-bottom: $--spacing-m;
       @include for-mobile() {
         font-size: $--fs-600;
         font-weight: $--sb-weight;
@@ -30,7 +30,7 @@
       }
     }
     p {
-      margin-bottom: 24px;
+      margin-bottom: $--spacing-m;
       @include for-mobile() {
         text-align: center;
       }

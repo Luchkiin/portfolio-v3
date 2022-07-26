@@ -1,13 +1,13 @@
 .header {
-  padding: 48px 100px;
+  padding: $--spacing-xl 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @include for-desktop() {
-    padding: 48px;
+    padding: $--spacing-xl;
   }
   @include for-tablet() {
-    padding: 24px;
+    padding: $--spacing-m;
   }
 }
 

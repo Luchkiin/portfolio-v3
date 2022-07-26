@@ -4,7 +4,7 @@ input [type="submit"],
 input [type="reset"],
 input [type="button"] {
   display: inline-block;
-  padding: 13.5px 36px;
+  padding: 13.5px $--spacing-l;
   color: inherit;
   background: none;
   text-align: $--text-center;
@@ -71,7 +71,7 @@ input [type="button"] {
 .back-to-top-btn {
   display: inline-block;
   position: fixed;
-  bottom: 75px;
+  bottom: $--spacing-xxl;
   right: 50px;
   z-index: 5;
   outline: none;
@@ -84,8 +84,8 @@ input [type="button"] {
   opacity: 0;
   visibility: hidden;
   @include for-mobile() {
-    bottom: 75px;
-    right: 24px;
+    bottom: $--spacing-xxl;
+    right: $--spacing-m;
   }
   @include hover-supported() {
     transition: $--transition-250;

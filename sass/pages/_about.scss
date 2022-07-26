@@ -1,11 +1,11 @@
 .text-row-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 75px;
+  padding-bottom: $--spacing-xxl;
   position: relative;
   @include for-mobile() {
     flex-direction: column;
-    padding-bottom: 48px;
+    padding-bottom: $--spacing-xl;
   }
   .text--column {
     flex: 50%;
@@ -25,7 +25,7 @@
       }
     }
     .h2 {
-      padding-bottom: 24px;
+      padding-bottom: $--spacing-m;
       @include for-mobile() {
         font-size: $--fs-600;
         font-weight: $--sb-weight;
@@ -41,11 +41,11 @@
   }
   .text--column__left {
     padding-right: 100px;
+    @include for-tablet() {
+      padding-right: $--spacing-xl;
+    }
     @include for-mobile() {
       padding-right: 0;
-    }
-    @include for-tablet() {
-      padding-right: 48px;
     }
     p {
       padding-bottom: 16px;
@@ -55,22 +55,26 @@
     }
     .contact-list-wrapper {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding-top: 48px;
+      margin-top: $--spacing-xl;
+      background-color: $light-petrol;
+      padding: $--spacing-l $--spacing-m;
+      border-radius: $--button-radius;
       @include for-tablet() {
-        padding-top: 36px;
+        margin-top: $--spacing-l;
+        padding: $--spacing-m;
+      }
+      @include for-desktop() {
         flex-direction: column;
-        align-items: flex-start;
       }
       .contact-list {
-        @include for-tablet() {
-          padding-bottom: 24px;
-        }
         .subtitle-wrapper {
-          padding-bottom: 16px;
+          padding-bottom: $--spacing-s;
+          @include for-desktop() {
+            text-align: center;
+          }
           .subtitle--large {
-            color: $black;
+            color: $petrol;
             font-size: $--fs-300;
             font-weight: $--sb-weight;
             line-height: $--l-h-20;
@@ -81,12 +85,17 @@
           margin: 0;
           padding: 0;
           list-style: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           li {
+            padding-right: $--spacing-m;
+            /*
             padding-bottom: 6px;
             background-image: linear-gradient(
               to right,
               #256265 50%,
-              $black 50%
+              $white 50%
             );
             background-size: 200% 100%;
             background-position: 100%;
@@ -97,18 +106,38 @@
               background-position: 0%;
               transition: $link-hover-left-right-contact;
             }
+            */
+            color: $black;
+            transition: all 0.2s ease-in-out 0s;
+            &:first-child {
+              margin-bottom: -5px;
+            }
             &:last-child {
-              padding-bottom: 0;
+              padding-right: 0;
+            }
+            @include hover-supported() {
+              transform: $--hover-effect-moveUp;
             }
           }
         }
       }
       .profile-img {
+        padding-right: $--spacing-l;
+        @include for-desktop() {
+          padding-bottom: $--spacing-m;
+          padding-right: initial;
+        }
         img {
           width: 150px;
           height: 150px;
           border-radius: 100%;
+          /*
           border: 2px solid $light-grey;
+          */
+          @include for-mobile() {
+            width: 125px;
+            height: 125px;
+          }
         }
       }
     }
@@ -117,13 +146,13 @@
     position: absolute;
     left: 50%;
     top: 0;
-    bottom: 75px;
-    border-left: 0.5px solid $light-grey;
+    bottom: $--spacing-xxl;
+    border-left: 1px solid $light-grey;
     @include for-mobile() {
       position: static;
-      border: 0.5px solid $light-grey;
+      border: 1px solid $light-grey;
       border-left: none;
-      margin: 75px 0;
+      margin: $--spacing-xxl 0;
     }
   }
   .text--column__right {
@@ -132,14 +161,40 @@
       padding-left: 0;
     }
     .experience-list {
-      padding-bottom: 48px;
+      margin-bottom: $--spacing-l;
       &:last-child {
         padding-bottom: 0;
       }
       .work {
-        padding-bottom: 24px;
+        margin-bottom: $--spacing-m;
         &:last-child {
           padding-bottom: 0;
+        }
+        .work-skills {
+          padding-top: $--spacing-s;
+          .skills-title {
+            color: $black;
+            padding-bottom: 12px;
+            display: block;
+          }
+          .skills-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include for-mobile() {
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              white-space: nowrap;
+            }
+            .skill-item {
+              font-size: $--fs-100;
+              margin-right: 12px;
+              margin-bottom: 12px;
+              border: 1px solid $light-grey;
+              border-radius: $--button-radius-3px;
+              padding: 6px $--spacing-xs;
+            }
+          }
         }
       }
       h4 {
@@ -160,6 +215,7 @@
           display: block;
           padding-bottom: 8px;
         }
+        /*
         &::after {
           content: "•";
           padding: 0 6px;
@@ -168,11 +224,14 @@
             padding: 0;
           }
         }
+        */
       }
       .date {
-        font-size: $--fs-200;
+        display: block;
+        font-size: $--fs-100;
         color: $dark-grey;
         letter-spacing: $--ls-015;
+        padding-top: 8px;
         @include for-mobile() {
           font-size: $--fs-100;
           font-weight: $--r-weight;
@@ -189,16 +248,23 @@
       }
       ul {
         margin: 0;
-        padding-left: 24px;
-        padding-bottom: 24px;
+        padding-left: $--spacing-m;
+        padding-bottom: $--spacing-m;
         &:last-child {
           padding-bottom: 0;
         }
       }
     }
+    .education-section {
+      margin-bottom: $--spacing-xl;
+    }
+    .skills-section {
+      margin-bottom: $--spacing-xl;
+    }
     .language-section {
+      margin-bottom: 0;
       .language {
-        padding-bottom: 24px;
+        padding-bottom: $--spacing-m;
         &:last-child {
           padding-bottom: 0;
         }
@@ -209,6 +275,6 @@
 
 .back-to-top-btn {
   @include for-mobile() {
-    bottom: 48px;
+    bottom: $--spacing-xl;
   }
 }

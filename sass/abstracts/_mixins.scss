@@ -1,5 +1,5 @@
 @mixin sectionPadding {
-  padding: 75px 0;
+  padding: $--spacing-xxl 0;
 }
 
 @mixin fullImage {
@@ -19,6 +19,7 @@
 @mixin transition500 {
   transition: $--transition-500;
 }
+
 
 // Media Queries
 
@@ -76,7 +77,7 @@
 // Custom scroll-bar
 @mixin custom-scroll-bar() {
   &::-webkit-scrollbar {
-    width: 8px;
+    width: $--spacing-xs;
     height: 12px;
   }
   &::-webkit-scrollbar-thumb {
@@ -88,30 +89,71 @@
   &::-webkit-scrollbar-track {
     background-color: $light-grey;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
+    border-radius: $--spacing-xs;
   }
 }
-
 
 // Hover
 @mixin hover-supported {
   @media not all and (hover: none) {
-      &:hover {
-          @content;
-      }
+    &:hover {
+      @content;
+    }
   }
 }
 
 @mixin hover-supported-all {
   @media not all and (hover: none) {
-      &:hover * {
-          @content;
-      }
+    &:hover * {
+      @content;
+    }
   }
 }
 
+@mixin skeleton-loading {
+  @keyframes crank-up {
+    20%,
+    40% {
+      -webkit-transform: translateY(34px);
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+}
 
 // Color System Swatches
+
+@mixin youty-color-system() {
+  .youty-sun {
+    background-color: $youty-yellow;
+  }
+  .youty-sand {
+    background-color: #f5f5f0;
+  }
+  .youty-pine {
+    background-color: #19553c;
+  }
+  .youty-rose {
+    background-color: #ff4b4b;
+  }
+  .youty-stone {
+    background-color: #d2e1e9;
+  }
+  .youty-moss {
+    background-color: #d2e6dc;
+  }
+  .youty-black {
+    background-color: #000000;
+  }
+  .youty-white {
+    background-color: #ffffff;
+    border: 1px solid $light-grey;
+  }
+}
 
 @mixin onetwoid-color-system() {
   .onetwoid-blue {
@@ -266,13 +308,13 @@
 
 @mixin bevera-color-system() {
   .bevera-gold {
-    background-color: #BBAC78;
+    background-color: #bbac78;
   }
   .bevera-wineRed {
-    background-color: #603D4C;
+    background-color: #603d4c;
   }
   .bevera-green {
-    background-color: #4B9560;
+    background-color: #4b9560;
   }
   .bevera-black {
     background-color: #222222;
@@ -281,10 +323,10 @@
     background-color: #888888;
   }
   .bevera-grey {
-    background-color: #CECECE;
+    background-color: #cecece;
   }
   .bevera-lightGrey {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
   .bevera-white {
     background-color: #ffffff;
@@ -294,7 +336,7 @@
 
 @mixin techflake-color-system() {
   .techflake-green {
-    background-color: #20BD67;
+    background-color: #20bd67;
   }
   .techflake-darkGreen {
     background-color: #199450;
@@ -306,10 +348,10 @@
     background-color: #888888;
   }
   .techflake-grey {
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
   }
   .techflake-lightGrey {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
   }
   .techflake-white {
     background-color: #ffffff;
@@ -318,6 +360,34 @@
 }
 
 // Typography
+@mixin youty-typography() {
+  .reckless-regular {
+    font-size: $--fs-400;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+  .inter-light {
+    font-size: $--fs-300;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+  .inter-regular {
+    font-size: $--fs-400;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+  .inter-medium {
+    font-size: $--fs-500;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+  .inter-semiBold {
+    font-size: $--fs-600;
+    font-weight: $--r-weight;
+    color: $dark-grey;
+  }
+}
+
 @mixin onetwoid-typography() {
   .catamaran-bold {
     font-size: $--fs-300;

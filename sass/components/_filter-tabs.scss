@@ -1,7 +1,7 @@
 .work-filter-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: $--spacing-xl;
   border-bottom: 1px solid $light-grey;
   .filter-tabs {
     display: flex;
@@ -19,7 +19,7 @@
       justify-content: center;
     }
     .filter-tab {
-      padding: 16px 28px;
+      padding: $--spacing-s 28px;
       font-size: $--fs-300;
       font-weight: $--sb-weight;
       line-height: $--l-h-20;
@@ -36,7 +36,7 @@
       }
       cursor: pointer;
       @include for-mobile() {
-        padding: 16px 6px;
+        padding: $--spacing-s 6px;
       }
       @include hover-supported() {
         color: $black;
