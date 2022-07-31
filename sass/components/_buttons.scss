@@ -83,9 +83,12 @@ input [type="button"] {
   transition: background-color 0.5s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
+  @include for-tablet() {
+    right: 0;
+  }
   @include for-mobile() {
     bottom: $--spacing-xxl;
-    right: $--spacing-m;
+    right: 0;
   }
   @include hover-supported() {
     transition: $--transition-250;
@@ -105,4 +108,24 @@ input [type="button"] {
 .back-to-top-btn.show {
   opacity: 1;
   visibility: visible;
+}
+
+.back-to-top-btn-container.work {
+  .back-to-top-btn {
+    bottom: 150px;
+    right: 50px;
+    @include for-large-desktops() {
+      border: 1px solid $light-grey;
+    }
+    @include for-tablet() {
+      right: 0;
+      bottom: 145px;
+      border: 1px solid $light-grey;
+    }
+    @include for-mobile() {
+      right: 0;
+      bottom: 90px;
+      border: 1px solid $light-grey;
+    }
+  }
 }
