@@ -32,7 +32,7 @@ main > .sidebar-nav-wrapper {
     padding: $--spacing-l;
   }
   li {
-    text-align: right;
+    text-align: left;
     padding-bottom: 10px;
     &:last-child {
       padding-bottom: 0;
@@ -41,6 +41,8 @@ main > .sidebar-nav-wrapper {
   li.active > a {
     color: $black;
     font-weight: $--m-weight;
+    display: list-item;
+    list-style-type: disc;
   }
   a {
     text-decoration: none;

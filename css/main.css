@@ -1273,7 +1273,7 @@ main > .sidebar-nav-wrapper {
 }
 
 .sidebar-nav li {
-  text-align: right;
+  text-align: left;
   padding-bottom: 10px;
 }
 
@@ -1284,6 +1284,8 @@ main > .sidebar-nav-wrapper {
 .sidebar-nav li.active > a {
   color: #000000;
   font-weight: 500;
+  display: list-item;
+  list-style-type: disc;
 }
 
 .sidebar-nav a {
@@ -2267,7 +2269,7 @@ main > .sidebar-nav-wrapper {
 }
 
 .content-wrapper.home .right-section {
-  background-image: url("../images/home/mockups.png");
+  background-image: url("../images/home/mockups.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
