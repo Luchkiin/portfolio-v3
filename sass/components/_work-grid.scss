@@ -26,7 +26,7 @@
     }
     @include hover-supported() {
       .work-overlay {
-        opacity: 1;
+        opacity: 0.3;
       }
     }
     @include hover-supported() {
@@ -48,6 +48,7 @@
       opacity: 0;
       transition: all 0.4s ease-in-out 0s;
     }
+    /*
     .work-overlay.youty {
       background-color: $youty-yellow;
     }
@@ -72,6 +73,7 @@
     .work-overlay.techflake {
       background-color: $techflake-green;
     }
+    */
     .work-overlay__details {
       display: flex;
       flex-direction: column;
@@ -95,9 +97,9 @@
       .view-work-link {
         display: flex;
         align-items: center;
-        margin-top: $--spacing-l;
+        margin-top: 55px;
         span {
-          margin-right: $--spacing-m;
+          margin-right: $--spacing-s;
         }
       }
     }

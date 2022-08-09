@@ -54,6 +54,7 @@
       }
     }
     .contact-list-wrapper {
+      position: relative;
       display: flex;
       align-items: center;
       margin-top: $--spacing-xl;
@@ -138,6 +139,14 @@
             width: 125px;
             height: 125px;
           }
+        }
+      }
+      .business-card {
+        position: absolute;
+        right: 0;
+        display: block;
+        @include for-large-desktops() {
+          display: none;
         }
       }
     }
