@@ -5,7 +5,7 @@ main > .sidebar-nav-wrapper {
   width: 200px;
   left: 0;
   z-index: 1;
-  @include for-large-desktops() {
+  @media (max-width: 1400px) {
     display: none;
   }
 }
@@ -14,7 +14,12 @@ main > .sidebar-nav-wrapper {
   position: absolute;
   padding-left: 0;
   background-color: $white;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: -65px;
+  @include for-large-desktops() {
+    margin-left: -100px;
+    background-color: $white;
+  }
   .sidebar-num {
     font-size: $--fs-800;
     font-weight: $--b-weight;
