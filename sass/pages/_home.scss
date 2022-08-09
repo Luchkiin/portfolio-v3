@@ -14,18 +14,26 @@
 
 .content-wrapper.home {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr;
   align-self: center;
   height: 100vh;
   width: 100%;
-  margin-left: 100px;
+  padding-left: 100px;
+  background-image: url("../images/home/hero-image_large.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  z-index: 1;
   @include for-tablet() {
-    grid-template-rows: 1fr 1.25fr;
+    grid-template-rows: 1fr;
     grid-template-columns: none;
-    margin: 0;
+    padding: 0;
+    background-image: url("../images/home/hero-image_small.webp");
   }
-  .left-section {
-    padding-top: 100px;
+  .content-section {
+    padding-top: 294px;
     padding-right: $--spacing-m;
     display: flex;
     justify-content: space-between;
@@ -36,7 +44,7 @@
       align-items: center;
     }
     .social-media-list {
-      margin-bottom: 200px;
+      margin-bottom: 56px;
       display: flex;
       align-items: center;
       @include for-tablet() {
@@ -50,11 +58,5 @@
         }
       }
     }
-  }
-  .right-section {
-    background-image: url("../images/home/mockups.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }

@@ -3,6 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $white;
+  z-index: 2;
+  position: relative;
   @include for-desktop() {
     padding: $--spacing-xl;
   }
