@@ -2599,7 +2599,12 @@ main > .sidebar-nav-wrapper {
   padding: 0 8px;
   top: -12px;
   left: 16px;
-  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-content-wrapper .project-background .work-summary fieldset legend {
+    font-size: 0.875rem;
+  }
 }
 
 .work-content-wrapper .project-background .work-summary .work-summary-wrapper {
@@ -2651,7 +2656,7 @@ main > .sidebar-nav-wrapper {
   color: #b1b1b1;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .work-content-wrapper .project-background .work-summary .work-summary-wrapper span {
     font-size: 0.875rem;
   }

@@ -140,7 +140,9 @@ a.link.link--large {
           padding: 0 8px;
           top: -12px;
           left: 16px;
-          font-weight: $--m-weight;
+          @include for-mobile() {
+            font-size: $--fs-200;
+          }
         }
       }
       .work-summary-wrapper {
@@ -165,7 +167,7 @@ a.link.link--large {
         span {
           padding-bottom: 8px;
           color: $grey;
-          @include for-tablet() {
+          @include for-mobile() {
             font-size: $--fs-200;
           }
           &:nth-child(2) {
