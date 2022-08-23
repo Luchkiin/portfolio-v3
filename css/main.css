@@ -2547,6 +2547,22 @@ main > .sidebar-nav-wrapper {
 }
 
 .work-content-wrapper .project-background .work-summary {
+  /*
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include for-tablet() {
+        flex-direction: column;
+        align-items: initial;
+        justify-content: initial;
+        height: 100%;
+      }
+      */
+}
+
+.work-content-wrapper .project-background .work-summary fieldset {
+  width: 100%;
+  padding: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2556,10 +2572,13 @@ main > .sidebar-nav-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
 }
 
-@media only screen and (max-width: 992px) {
-  .work-content-wrapper .project-background .work-summary {
+@media only screen and (max-width: 768px) {
+  .work-content-wrapper .project-background .work-summary fieldset {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2574,13 +2593,22 @@ main > .sidebar-nav-wrapper {
   }
 }
 
+.work-content-wrapper .project-background .work-summary fieldset legend {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0 8px;
+  top: -12px;
+  left: 16px;
+  font-weight: 500;
+}
+
 .work-content-wrapper .project-background .work-summary .work-summary-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .work-content-wrapper .project-background .work-summary .work-summary-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2601,7 +2629,7 @@ main > .sidebar-nav-wrapper {
   margin-right: 100px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .work-content-wrapper .project-background .work-summary .work-summary-wrapper .work-role {
     margin-bottom: 24px;
     margin-right: 0;
@@ -2619,11 +2647,18 @@ main > .sidebar-nav-wrapper {
 }
 
 .work-content-wrapper .project-background .work-summary .work-summary-wrapper span {
-  padding-bottom: 6px;
+  padding-bottom: 8px;
+  color: #b1b1b1;
+}
+
+@media only screen and (max-width: 992px) {
+  .work-content-wrapper .project-background .work-summary .work-summary-wrapper span {
+    font-size: 0.875rem;
+  }
 }
 
 .work-content-wrapper .project-background .work-summary .work-summary-wrapper span:nth-child(2) {
-  color: #b1b1b1;
+  color: #000000;
   padding-bottom: 0;
 }
 
