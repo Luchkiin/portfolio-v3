@@ -1,3 +1,346 @@
+.container__about {
+  .profile-img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -135px;
+    @include for-mobile() {
+      bottom: -75px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      border: 5px solid $white;
+      box-shadow: $box-shadow-down;
+      @include for-mobile() {
+        width: 115px;
+        height: 115px;
+        border: 3px solid $white;
+      }
+    }
+  }
+
+  .about-info {
+    h2 {
+      text-align: center;
+      @include for-mobile() {
+        font-size: $--fs-600;
+        font-weight: $--sb-weight;
+        letter-spacing: $--ls-048;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: $--spacing-m;
+      li {
+        padding-right: $--spacing-m;
+        color: $black;
+        transition: all 0.2s ease-in-out 0s;
+        &:first-child {
+          margin-bottom: -5px;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        @include hover-supported() {
+          transform: $--hover-effect-moveUp;
+        }
+      }
+      @include for-mobile() {
+        padding-top: $--spacing-s;
+        padding-bottom: $--spacing-l;
+        border-bottom: 1px solid $light-grey;
+      }
+    }
+  }
+
+  .about-wrapper {
+    margin-top: $--spacing-xxl;
+    display: flex;
+    @include for-tablet() {
+      margin-top: $--spacing-xl;
+      flex-direction: column;
+    }
+    @include for-mobile() {
+      margin-top: $--spacing-l;
+      flex-direction: column;
+    }
+    .about__section-heading {
+      flex-basis: 30%;
+      max-width: 30%;
+      @include for-tablet() {
+        margin-bottom: $--spacing-s;
+        flex-basis: initial;
+        max-width: initial;
+      }
+      .mobile-tablet-margin {
+        @include for-tablet() {
+          margin-bottom: $--spacing-xs;
+        }
+      }
+    }
+    .about__text {
+      flex-basis: 70%;
+      max-width: 70%;
+      @include for-tablet() {
+        flex-basis: initial;
+        max-width: initial;
+      }
+      p {
+        margin-bottom: $--spacing-s;
+        @include for-mobile() {
+          margin-bottom: 0;
+          margin-top: $--spacing-s;
+          font-size: $--fs-200;
+          font-weight: $--r-weight;
+          line-height: $--l-h-24;
+          letter-spacing: $--ls-025;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      #show-more {
+        p:first-child {
+          margin-top: $--spacing-s;
+        }
+      }
+      #show-more-dots {
+        display: none;
+        @include for-tablet() {
+          display: inline-block;
+        }
+      }
+    }
+    .experience-wrapper {
+      flex-basis: 70%;
+      max-width: 70%;
+      @include for-tablet() {
+        flex-basis: initial;
+        max-width: initial;
+      }
+      .experience-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: $--spacing-xl;
+        @include for-desktop() {
+          grid-gap: $--spacing-m;
+        }
+        @include for-tablet() {
+          grid-template-columns: 1fr 1fr;
+          grid-gap: $--spacing-m;
+        }
+        @include for-mobile() {
+          grid-template-columns: 1fr;
+          grid-gap: $--spacing-m;
+        }
+        .experience-card {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid $light-grey;
+          padding: $--spacing-m $--spacing-m 16px $--spacing-m;
+          border-radius: 6px;
+          @include for-mobile() {
+            padding: $--spacing-s;
+          }
+          .experience-top-wrapper {
+            display: flex;
+            align-items: center;
+            .experience-logo {
+              width: 60px;
+              height: 60px;
+              min-width: 60px;
+              border-radius: 100%;
+              margin-right: $--spacing-m;
+              @include for-mobile() {
+                width: 50px;
+                height: 50px;
+                min-width: 50px;
+                margin-right: $--spacing-s;
+              }
+            }
+            .experience-info {
+              .experience-title {
+                margin-bottom: $--spacing-xs;
+              }
+            }
+            .experience-workplace {
+              color: $dark-grey;
+            }
+          }
+          .experience-date {
+            display: flex;
+            align-items: center;
+            color: $dark-grey;
+            margin: $--spacing-m 0 20px 0;
+            @include for-desktop() {
+              margin: $--spacing-m 0 0 0;
+              flex: 1;
+            }
+            @include for-tablet() {
+              flex: 1;
+            }
+          }
+          .divider {
+            margin: 0;
+            margin-left: -24px;
+            margin-right: -24px;
+            @include for-desktop() {
+              margin-top: $--spacing-m;
+            }
+            @include for-mobile() {
+              margin-left: -16px;
+              margin-right: -16px;
+              margin-top: $--spacing-m;
+            }
+          }
+          .experience-summary {
+            flex: 1;
+            @include for-desktop() {
+              display: none;
+            }
+            p {
+              margin-bottom: $--spacing-m;
+            }
+          }
+          .experience-link {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 16px;
+            a {
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+    .skills-wrapper {
+      .skills-list {
+        display: flex;
+        @include for-mobile() {
+          flex-direction: column;
+        }
+        .skill-list {
+          padding-right: 150px;
+          width: 275px;
+          max-width: 275px;
+          @include for-large-desktops() {
+            padding-right: 125px;
+            width: initial;
+            max-width: initial;
+          }
+          @include for-desktop() {
+            padding-right: 100px;
+          }
+          @include for-tablet() {
+            padding-right: $--spacing-xxl;
+            width: 225px;
+            max-width: 225px;
+          }
+          @include for-mobile() {
+            padding-right: 0;
+            max-width: initial;
+            width: initial;
+          }
+          &:last-child {
+            padding-right: 0;
+            ul {
+              @include for-mobile() {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .skill-title {
+            @include for-mobile() {
+              font-size: $--fs-200;
+              font-weight: $--sb-weight;
+              line-height: $--l-h-18;
+              letter-spacing: $--ls-015;
+            }
+          }
+          ul {
+            padding-left: $--spacing-s;
+            margin-bottom: 0;
+            @include for-mobile() {
+              margin-bottom: $--spacing-m;
+            }
+          }
+        }
+      }
+    }
+    .languages-wrapper {
+      display: flex;
+      margin-bottom: $--spacing-xxl;
+      @include for-mobile() {
+        flex-direction: column;
+        margin-bottom: $--spacing-xl;
+      }
+      .language {
+        display: flex;
+        flex-direction: column;
+        padding-right: 150px;
+        width: 275px;
+        max-width: 275px;
+        @include for-large-desktops() {
+          padding-right: 140px;
+          width: initial;
+          width: initial;
+        }
+        @include for-desktop() {
+          padding-right: 115px;
+        }
+        @include for-tablet() {
+          padding-right: $--spacing-xxl;
+          width: 225px;
+          max-width: 225px;
+        }
+        @include for-mobile() {
+          padding-right: 0;
+          width: initial;
+          max-width: initial;
+          margin-top: $--spacing-m;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        .language-title {
+          margin-bottom: $--spacing-s;
+          @include for-mobile() {
+            font-size: $--fs-200;
+            font-weight: $--sb-weight;
+            line-height: $--l-h-18;
+            letter-spacing: $--ls-015;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+  .divider {
+    border: 0.5px solid $light-grey;
+    margin: $--spacing-xxl 0;
+    @include for-tablet() {
+      margin: $--spacing-xl 0;
+    }
+    @include for-mobile() {
+      margin: $--spacing-l 0;
+    }
+  }
+}
+
 .text-row-wrapper {
   display: flex;
   justify-content: space-between;

@@ -66,6 +66,32 @@ input [type="button"] {
   }
 }
 
+
+// Show more button / link
+
+.btn--read-more {
+  padding: 0;
+  margin-top: $--spacing-s;
+  display: inline;
+  font-size: $--fs-300;
+  font-weight: $--m-weight;
+  line-height: $--l-h-29;
+  letter-spacing: $--ls-025;
+  color: $blue;
+  text-align: left;
+  border-radius: 0;
+  display: none;
+  @include for-mobile() {
+    font-size: $--fs-200;
+    font-weight: $--m-weight;
+    line-height: $--l-h-27;
+    letter-spacing: $--ls-025;
+  }
+  @include for-tablet() {
+    display: block;
+  }
+}
+
 // Back to top button
 
 .back-to-top-btn {

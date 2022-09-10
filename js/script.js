@@ -178,3 +178,23 @@ window.onload = () => {
     }, 6000);
   }
 };
+
+
+/*----------------------------------------------------*/
+/* Read More Functionality
+        ------------------------------------------------------ */
+function showMore() {
+  var dots = document.getElementById("show-more-dots");
+  var moreText = document.getElementById("show-more");
+  var btnText = document.getElementById("showMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more +"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less -"; 
+    moreText.style.display = "inline";
+  }
+}

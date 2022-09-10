@@ -24,6 +24,12 @@ body {
   padding: 0;
 }
 
+.inner-wrapper__full-width {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .content-container {
   width: 100%;
   margin: 0 auto;
@@ -100,8 +106,15 @@ ul {
   }
 }
 
+#show-more {
+  @include for-tablet() {
+    display: none;
+  }
+}
+
 #preloader {
-  background: $petrol url("/images/preloader/loader.gif") no-repeat center center;
+  background: $petrol url("/images/preloader/loader.gif") no-repeat center
+    center;
   background-size: $--max-width-small !important;
   height: 100vh;
   width: 100%;
@@ -112,5 +125,3 @@ ul {
     background-size: 500px !important;
   }
 }
-
-

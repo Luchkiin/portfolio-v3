@@ -1,31 +1,89 @@
 .page-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 27px;
-    margin-bottom: $--spacing-xxl;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 27px;
+  margin-bottom: $--spacing-xxl;
+  position: relative;
+  z-index: 1;
+  @include for-mobile() {
+    padding-top: 12px;
+    margin-bottom: $--spacing-xl;
+  }
+  .left-aligned {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    transform: translateY(-80%);
     @include for-mobile() {
-      padding-top: 12px;
-      margin-bottom: $--spacing-xl;
-    }
-    .left-aligned {
-      position: absolute;
-      left: 0;
-      top: 80%;
-      transform: translateY(-80%);
-      @include for-mobile() {
-        top: 92%;
-        transform: translateY(-92%);
-      }
-    }
-    @include for-mobile() {
-      .h1 {
-        font-size: $--fs-700;
-        font-weight: $--sb-weight;
-        letter-spacing: $--ls-048;
-        color: $black;
-      }
+      top: 92%;
+      transform: translateY(-92%);
     }
   }
+  @include for-mobile() {
+    .h1 {
+      font-size: $--fs-700;
+      font-weight: $--sb-weight;
+      letter-spacing: $--ls-048;
+      color: $black;
+    }
+  }
+}
+
+.page-heading.with-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 27px;
+  margin-bottom: 164px;
+  position: relative;
+  z-index: 1;
+  background: rgb(37,98,101);
+  background: linear-gradient(90deg, rgba(37,98,101,1) 0%, rgba(56,141,145,1) 50%, rgba(37,98,101,1) 100%); 
+  height: 300px;
+  margin-left: -100px;
+  margin-right: -100px;
+  @include for-desktop() {
+    margin-left: -48px;
+    margin-right: -48px;
+  }
+  @include for-tablet {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  @include for-mobile() {
+    padding-top: 12px;
+    margin-bottom: 90px;
+    height: 175px;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  .left-aligned {
+    position: absolute;
+    left: 100px;
+    top: 54%;
+    transform: translateY(-80%);
+    @include for-desktop() {
+      left: 48px;
+    }
+    @include for-tablet() {
+      left: 24px;
+    }
+    @include for-mobile() {
+      left: 24px;
+      top: 55%;
+      transform: translateY(-92%);
+    }
+  }
+  .h1 {
+    color: $white;
+  }
+  @include for-mobile() {
+    .h1 {
+      font-size: $--fs-700;
+      font-weight: $--sb-weight;
+      letter-spacing: $--ls-048;
+      color: $white;
+    }
+  }
+}
