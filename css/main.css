@@ -1167,6 +1167,14 @@ input [type="button"]:focus {
   border-bottom: 1px solid #e5e5e5;
 }
 
+@media only screen and (max-width: 768px) {
+  .work-filter-wrapper {
+    margin-left: -24px;
+    margin-right: -24px;
+    width: 100vw;
+  }
+}
+
 .work-filter-wrapper .filter-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
