@@ -10640,17 +10640,17 @@ return jQuery;
   // Descriptions of all options available on the demo site:
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
-    albumLabel: 'Image %1 of %2',
+    albumLabel: '%1 of %2',
     alwaysShowNavOnTouchDevices: true,
-    fadeDuration: 600,
+    fadeDuration: 350,
     fitImagesInViewport: true,
     imageFadeDuration: 600,
     // maxWidth: 800,
-    // maxHeight: 600,
+    maxHeight: 800,
     positionFromTop: 48,
     resizeDuration: 700,
     showImageNumberLabel: true,
-    wrapAround: false,
+    wrapAround: true,
     disableScrolling: true,
     /*
     Sanitize Title

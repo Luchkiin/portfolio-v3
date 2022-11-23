@@ -33,6 +33,10 @@ input [type="button"] {
   transition: $--transition-250;
 }
 
+.btn-full-width {
+  width: 100%;
+}
+
 .btn-wrapper {
   @include for-tablet() {
     display: flex;

@@ -906,6 +906,10 @@ input [type="button"]:focus {
   transition: all 250ms ease;
 }
 
+.btn-full-width {
+  width: 100%;
+}
+
 @media only screen and (max-width: 992px) {
   .btn-wrapper {
     display: -webkit-box;
