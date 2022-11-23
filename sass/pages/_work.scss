@@ -121,7 +121,7 @@ a.link.link--large {
 }
 
 .listd-banner {
-  background: linear-gradient(90deg, #FD746C 0%, #FE8E66 98.3%);
+  background: linear-gradient(90deg, #fd746c 0%, #fe8e66 98.3%);
   img {
     width: 120px;
     @include for-desktop() {
@@ -134,7 +134,11 @@ a.link.link--large {
 }
 
 .geosty-banner {
-  background: linear-gradient(101.83deg, rgba(53, 108, 128, 0.75) 0%, #39BBE7 100%);
+  background: linear-gradient(
+    101.83deg,
+    rgba(53, 108, 128, 0.75) 0%,
+    #39bbe7 100%
+  );
   img {
     width: 150px;
     @include for-desktop() {
@@ -841,6 +845,117 @@ a.link.link--large {
       }
     }
   }
+
+  .design-concept {
+    background: $smoke-white;
+    margin-bottom: $--spacing-xxl;
+    @include for-large-desktops() {
+      padding: 0 0 $--spacing-xxl 0;
+      margin: 0 -100px;
+    }
+    @include for-desktop() {
+      padding: 0 0 $--spacing-xxl 0;
+      margin: 0 -48px;
+    }
+    @include for-tablet() {
+      margin: 0 -24px;
+      padding: 0 0 $--spacing-xxl 0;
+    }
+    p {
+      @include for-mobile() {
+        font-size: $--fs-200;
+        font-weight: $--r-weight;
+        line-height: $--l-h-24;
+        letter-spacing: $--ls-025;
+      }
+    }
+    .content-container {
+      background-color: $white;
+      .content-wrapper {
+        padding: $--spacing-xxl 0;
+        @include for-tablet() {
+          padding: $--spacing-xxl $--spacing-m;
+          padding-bottom: 51px;
+        }
+        .quote-wrapper {
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: $--spacing-xl;
+          color: #19553c;
+          .quote {
+            @include for-mobile() {
+              font-size: $--fs-500;
+              line-height: $--l-h-32;
+            }
+          }
+        }
+        .text-image-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: $--spacing-xl;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: $--spacing-xl;
+          @include for-mobile() {
+            grid-template-columns: 1fr;
+            grid-gap: $--spacing-s;
+          }
+          &:last-child {
+            margin-bottom: 0;
+            @include for-mobile() {
+              .text-section {
+                order: 1;
+              }
+              .image-section {
+                order: 2;
+              }
+            }
+          }
+          .text-section {
+            text-align: center;
+            @include for-mobile() {
+              text-align: left;
+            }
+            h3 {
+              @include for-mobile() {
+                font-size: $--fs-500;
+                font-weight: $--sb-weight;
+                letter-spacing: $--ls-015;
+                margin-bottom: $--spacing-s;
+                span {
+                  display: inline;
+                }
+              }
+            }
+            ul {
+              width: 315px;
+              margin-top: $--spacing-m;
+              padding-left: 0;
+              text-align: left;
+              margin-left: auto;
+              margin-right: auto;
+              list-style: none;
+              @include for-mobile() {
+                width: auto;
+              }
+            }
+            li {
+              padding-bottom: 6px;
+              &:last-child {
+                padding-bottom: 0;
+              }
+            }
+          }
+          .image-section {
+            img {
+              border-radius: $--border-radius-small;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .app-design {
     background-color: $smoke-white;
     margin-bottom: $--spacing-xxl;
