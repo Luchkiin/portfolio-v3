@@ -26,6 +26,7 @@ body {
 
 .inner-wrapper__full-width {
   width: 100%;
+  max-width: $--max-width-large;
   margin: 0 auto;
   padding: 0;
 }

@@ -19,7 +19,7 @@
   height: 100vh;
   width: 100%;
   padding-left: 100px;
-  background-image: url("../images/home/hero-image_large.webp");
+  background-image: url("../images/hero/hero-image_large.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -30,7 +30,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: none;
     padding: 0;
-    background-image: url("../images/home/hero-image_small.webp");
+    background-image: url("../images/hero/hero-image_small.webp");
   }
   .content-section {
     padding-top: 294px;

@@ -1,6 +1,7 @@
 /* Transitions & Transforms
 ******************************************************/
 $--transition-250: all 250ms ease;
+$--transition-300: all 300ms ease;
 $--transition-500: all 500ms ease;
 $--menu-from-above-down: translateY(-100%);
 $--menu-from-above-up: translateY(0);
@@ -26,9 +27,16 @@ $z-index: (
 
 /* Border Radius
 ******************************************************/
-$--button-radius: 6px;
 $--button-radius-3px: 3px;
+$--button-radius: 6px;
+$--border-radius-small: 8px;
+$--border-radius-large: 16px;
 
+/* Text Shadows
+******************************************************/
+$--text-shadow-light: 0 2px 3px rgba(0, 0, 0, 0.15);
+$--text-shadow-mid: 0 2px 3px rgba(0, 0, 0, 0.3);
+$--text-shadow-heavy: 0 2px 3px rgba(0, 0, 0, 0.5);
 
 /* Spacing
 ******************************************************/
@@ -41,6 +49,8 @@ $--spacing-xxl: 75px;
 
 /* Max Width
 ******************************************************/
+$--max-width-xlarge: 2120px;
+$--max-width-large: 1920px;
 $--max-width: 1420px;
 $--max-width-medium: 950px;
 $--max-width-small: 750px;

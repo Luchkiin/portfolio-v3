@@ -29,6 +29,7 @@
       align-items: center;
       justify-content: center;
       width: 25%;
+      transition: $--transition-300;
       @include for-mobile() {
         align-items: stretch;
         width: 100%;
@@ -40,7 +41,6 @@
       }
       @include hover-supported() {
         color: $black;
-        transition: color 500ms ease-out;
       }
       &:nth-child(1).active ~ .filter-underline {
         transform: translateX(0%) scaleX(0.25);

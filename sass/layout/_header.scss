@@ -1,10 +1,30 @@
 .header {
   padding: $--spacing-xl 100px;
+  max-width: $--max-width-xlarge;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $white;
   z-index: 2;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @include for-desktop() {
+    padding: $--spacing-xl;
+  }
+  @include for-tablet() {
+    padding: $--spacing-m;
+  }
+}
+
+.header.header__full-width {
+  padding: $--spacing-xl 100px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 3;
   position: relative;
   @include for-desktop() {
     padding: $--spacing-xl;

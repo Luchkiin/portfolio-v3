@@ -21,6 +21,7 @@
     margin-bottom: $--spacing-s;
     position: relative;
     overflow: hidden;
+    border-radius: $--border-radius-small;
     @include for-mobile() {
       margin-bottom: 12px;
     }
@@ -38,7 +39,28 @@
       }
     }
     .work-overlay {
+      /*
       background: $black;
+      */
+      background: linear-gradient(
+        to right,
+        hsl(0, 0%, 0%) 0%,
+        hsla(0, 0%, 0%, 0.964) 7.4%,
+        hsla(0, 0%, 0%, 0.918) 15.3%,
+        hsla(0, 0%, 0%, 0.862) 23.4%,
+        hsla(0, 0%, 0%, 0.799) 31.6%,
+        hsla(0, 0%, 0%, 0.73) 39.9%,
+        hsla(0, 0%, 0%, 0.655) 48.2%,
+        hsla(0, 0%, 0%, 0.577) 56.2%,
+        hsla(0, 0%, 0%, 0.497) 64%,
+        hsla(0, 0%, 0%, 0.417) 71.3%,
+        hsla(0, 0%, 0%, 0.337) 78.1%,
+        hsla(0, 0%, 0%, 0.259) 84.2%,
+        hsla(0, 0%, 0%, 0.186) 89.6%,
+        hsla(0, 0%, 0%, 0.117) 94.1%,
+        hsla(0, 0%, 0%, 0.054) 97.6%,
+        hsla(0, 0%, 0%, 0) 100%
+      );
       position: absolute;
       height: 100%;
       width: 100%;
@@ -86,21 +108,32 @@
       left: 0;
       opacity: 0;
       transition: 0.65s cubic-bezier(0.52, 0.01, 0.16, 1);
+      height: 100%;
       .work-overlay__title {
         color: $white;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
         display: block;
         width: 100%;
+        text-shadow: $--text-shadow-light;
       }
       span {
         color: $white;
+        text-shadow: $--text-shadow-light;
       }
       .view-work-link {
         display: flex;
         align-items: center;
+        /*
         margin-top: 55px;
+        */
+        position: absolute;
+        top: 47%;
         span {
           margin-right: $--spacing-s;
+        }
+        img {
+          width: 36px;
+          height: 36px;
         }
       }
     }

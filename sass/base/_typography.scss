@@ -7,6 +7,7 @@ h1.h1-home {
   text-align: $--text-left;
   text-transform: $--capitalize;
   padding-bottom: 16px;
+  text-shadow: $--text-shadow-light;
   @include for-tablet() {
     font-size: $--fs-800;
     padding-bottom: 8px;
@@ -21,6 +22,7 @@ h2.h2-home {
   color: $black;
   text-align: $--text-left ;
   padding-bottom: 64px;
+  text-shadow: $--text-shadow-light;
   @include for-tablet() {
     font-size: $--fs-200;
     line-height: $--l-h-22;

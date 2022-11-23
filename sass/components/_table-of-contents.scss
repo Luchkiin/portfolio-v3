@@ -5,7 +5,7 @@ main > .sidebar-nav-wrapper {
   width: 200px;
   left: 0;
   z-index: 1;
-  @media (max-width: 1400px) {
+  @media (max-width: $--xx--large) {
     display: none;
   }
 }
@@ -14,8 +14,11 @@ main > .sidebar-nav-wrapper {
   position: absolute;
   padding-left: 0;
   background-color: $white;
-  margin-top: 40px;
-  margin-left: -65px;
+  margin-top: 39px;
+  margin-left: -100px;
+  border: 1px solid $light-grey;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   @include for-large-desktops() {
     margin-left: -100px;
     background-color: $white;
@@ -30,10 +33,13 @@ main > .sidebar-nav-wrapper {
     color: $gold;
     display: none;
   }
+  .sidebar-nav__title {
+    padding: $--spacing-m $--spacing-m 20px 100px;
+  }
   ul {
     list-style: none;
     margin: 0;
-    padding: $--spacing-l;
+    padding: 0 $--spacing-l $--spacing-m 100px;
   }
   li {
     text-align: left;
@@ -52,7 +58,7 @@ main > .sidebar-nav-wrapper {
     text-decoration: none;
     display: block;
     color: $grey;
-    transition: all 50ms ease-in-out;
+    transition: $--transition-250;
     font-weight: $--m-weight;
     @include hover-supported() {
       color: $black;

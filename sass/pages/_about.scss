@@ -74,6 +74,9 @@
     .about__section-heading {
       flex-basis: 30%;
       max-width: 30%;
+      h5 {
+        color: $dark-grey;
+      }
       @include for-tablet() {
         margin-bottom: $--spacing-s;
         flex-basis: initial;

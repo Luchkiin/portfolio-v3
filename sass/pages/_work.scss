@@ -12,6 +12,8 @@
   align-items: flex-start;
   margin-bottom: $--spacing-s;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   @include for-mobile() {
     padding-top: 18px;
   }
@@ -33,6 +35,8 @@ a.link.link--large {
 
 .type-of-work-wrapper {
   margin-bottom: $--spacing-l;
+  margin-left: auto;
+  margin-right: auto;
   @include for-mobile() {
     margin-bottom: $--spacing-m;
   }
@@ -48,13 +52,149 @@ a.link.link--large {
 }
 
 .work-image-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $--border-radius-large;
+  height: 600px;
+  @include for-large-desktops() {
+    height: 500px;
+  }
   @include for-desktop() {
     margin: 0 -48px;
     width: 100vw;
+    border-radius: 0;
+    height: 450px;
   }
   @include for-tablet() {
     margin: 0 -24px;
     width: 100vw;
+    height: 350px;
+    border-radius: 0;
+  }
+  @include for-mobile() {
+    margin: 0 -24px;
+    width: 100vw;
+    height: 200px;
+    border-radius: 0;
+  }
+}
+
+/*Work banners*/
+.youty-banner {
+  background-color: $youty-yellow;
+  img {
+    width: 300px;
+    @include for-desktop() {
+      width: 250px;
+    }
+    @include for-mobile() {
+      width: 150px;
+    }
+  }
+}
+
+.onetwoid-banner {
+  background-color: $onetwoid-blue;
+  img {
+    width: 200px;
+    @include for-desktop() {
+      width: 150px;
+    }
+    @include for-mobile() {
+      width: 100px;
+    }
+  }
+}
+
+.giwautopart-banner {
+  background-color: #000000;
+  img {
+    width: 166px;
+    @include for-desktop() {
+      width: 125px;
+    }
+    @include for-mobile() {
+      width: 100px;
+    }
+  }
+}
+
+.listd-banner {
+  background: linear-gradient(90deg, #FD746C 0%, #FE8E66 98.3%);
+  img {
+    width: 120px;
+    @include for-desktop() {
+      width: 100px;
+    }
+    @include for-mobile() {
+      width: 75px;
+    }
+  }
+}
+
+.geosty-banner {
+  background: linear-gradient(101.83deg, rgba(53, 108, 128, 0.75) 0%, #39BBE7 100%);
+  img {
+    width: 150px;
+    @include for-desktop() {
+      width: 100px;
+    }
+    @include for-mobile() {
+      width: 75px;
+    }
+  }
+}
+
+.ica-banner {
+  background: $ica-red;
+  img {
+    width: 150px;
+    @include for-desktop() {
+      width: 100px;
+    }
+    @include for-mobile() {
+      width: 75px;
+    }
+  }
+}
+
+.scana-banner {
+  background: $scana-green;
+  img {
+    width: 125px;
+    @include for-desktop() {
+      width: 100px;
+    }
+    @include for-mobile() {
+      width: 65px;
+    }
+  }
+}
+
+.bevera-banner {
+  background: $bevera-gold;
+  img {
+    width: 285px;
+    @include for-desktop() {
+      width: 200px;
+    }
+    @include for-mobile() {
+      width: 125px;
+    }
+  }
+}
+
+.techflake-banner {
+  background: $techflake-green;
+  img {
+    width: 175px;
+    @include for-desktop() {
+      width: 125px;
+    }
+    @include for-mobile() {
+      width: 75px;
+    }
   }
 }
 
@@ -241,6 +381,13 @@ a.link.link--large {
               justify-content: center;
               align-items: center;
               margin-right: $--spacing-s;
+              img {
+                border-radius: $--button-radius;
+              }
+            }
+            .card.white {
+              border: 1px solid $light-grey;
+              border-radius: $--button-radius;
             }
           }
         }
@@ -294,6 +441,7 @@ a.link.link--large {
               width: 100px;
               height: 100px;
               margin-right: 20px;
+              border-radius: $--button-radius;
               @include for-mobile() {
                 margin-right: 0;
                 margin-bottom: $--spacing-xs;
@@ -684,6 +832,11 @@ a.link.link--large {
               }
             }
           }
+          .image-section {
+            img {
+              border-radius: $--border-radius-small;
+            }
+          }
         }
       }
     }
@@ -765,6 +918,7 @@ a.link.link--large {
           img {
             width: 300px;
             height: auto;
+            border-radius: $--border-radius-small;
             @include for-mobile() {
               width: 240px;
             }
@@ -847,6 +1001,7 @@ a.link.link--large {
           img {
             width: 300px;
             height: auto;
+            border-radius: $--border-radius-small;
             @include for-mobile() {
               width: 240px;
             }
@@ -858,6 +1013,7 @@ a.link.link--large {
           }
           img {
             width: 100%;
+            border-radius: $--border-radius-small;
           }
         }
         .desktop-two-images {
