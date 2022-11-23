@@ -20,7 +20,7 @@ h2.h2-home {
   line-height: $--l-h-32;
   letter-spacing: $--ls-025;
   color: $black;
-  text-align: $--text-left ;
+  text-align: $--text-left;
   padding-bottom: 64px;
   text-shadow: $--text-shadow-light;
   @include for-tablet() {
@@ -116,6 +116,7 @@ h2.h2-home {
   line-height: $--l-h-20;
   letter-spacing: $--ls-015;
 }
+
 .caption.caption--medium {
   font-size: $--fs-200;
   font-weight: $--r-weight;

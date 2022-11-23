@@ -212,6 +212,12 @@ body.lb-disable-scrolling {
   /*
   width: 100%;
   */
+  @include for-mobile() {
+    font-size: $--fs-200;
+    font-weight: $--sb-weight;
+    line-height: $--l-h-18;
+    letter-spacing: $--ls-015;
+  }
 }
 
 .lb-data .lb-caption a {
@@ -231,10 +237,18 @@ body.lb-disable-scrolling {
 .lb-data .lb-number {
   display: block;
   clear: left;
-  padding-top: 2px;
-  font-size: 12px;
   color: $grey;
   opacity: 1;
+  font-size: $--fs-300;
+  font-weight: $--sb-weight;
+  line-height: $--l-h-20;
+  letter-spacing: $--ls-015;
+  @include for-mobile() {
+    font-size: $--fs-200;
+    font-weight: $--sb-weight;
+    line-height: $--l-h-18;
+    letter-spacing: $--ls-015;
+  }
 }
 
 .lb-data .lb-close {

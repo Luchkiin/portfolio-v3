@@ -5379,6 +5379,15 @@ body.lb-disable-scrolling ::-webkit-scrollbar {
   */
 }
 
+@media only screen and (max-width: 768px) {
+  .lb-data .lb-caption {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+  }
+}
+
 .lb-data .lb-caption a {
   color: #256265;
 }
@@ -5396,10 +5405,21 @@ body.lb-disable-scrolling ::-webkit-scrollbar {
 .lb-data .lb-number {
   display: block;
   clear: left;
-  padding-top: 2px;
-  font-size: 12px;
   color: #b1b1b1;
   opacity: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .lb-data .lb-number {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+  }
 }
 
 .lb-data .lb-close {
