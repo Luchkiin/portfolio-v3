@@ -1704,7 +1704,7 @@ main > .sidebar-nav-wrapper {
 }
 
 .work-grid-wrapper .work-type {
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-grid-wrapper .work-youty {
@@ -1954,7 +1954,7 @@ main > .sidebar-nav-wrapper {
 }
 
 .container__about .about-wrapper .about__section-heading h5 {
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 @media only screen and (max-width: 992px) {
@@ -2116,7 +2116,7 @@ main > .sidebar-nav-wrapper {
 }
 
 .container__about .about-wrapper .experience-wrapper .experience-cards .experience-card .experience-top-wrapper .experience-workplace {
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .container__about .about-wrapper .experience-wrapper .experience-cards .experience-card .experience-date {
@@ -2126,7 +2126,7 @@ main > .sidebar-nav-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #DFE8E3;
+  color: #6D6D6D;
   margin: 24px 0 20px 0;
 }
 
@@ -2300,7 +2300,7 @@ main > .sidebar-nav-wrapper {
   height: 5px;
   width: 5px;
   margin-right: 8px;
-  background-color: #DFE8E3;
+  background-color: #6D6D6D;
 }
 
 .container__about .about-wrapper .skills-wrapper .skills-list .skill-list ul li:last-child {
@@ -3825,7 +3825,7 @@ main > .sidebar-nav-wrapper {
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .color-swatches-wrapper .color-swatch .color-info .color-hex {
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper {
@@ -3910,151 +3910,151 @@ main > .sidebar-nav-wrapper {
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p {
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .reckless-regular {
   font-size: 1.125rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .inter-light {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .inter-regular {
   font-size: 1.125rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .inter-medium {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .inter-semiBold {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .catamaran-bold {
   font-size: 1rem;
   font-weight: 700;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .catamaran-semiBold {
   font-size: 1rem;
   font-weight: 600;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .catamaran-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .assistant-bold {
   font-size: 1rem;
   font-weight: 700;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .openSans-Bold {
   font-size: 1rem;
   font-weight: 700;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .openSans-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .roboto-bold {
   font-size: 1rem;
   font-weight: 700;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .roboto-medium {
   font-size: 1rem;
   font-weight: 500;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .roboto-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .nunitoSans-semiBold {
   font-size: 1rem;
   font-weight: 600;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .nunitoSans-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .workSans-semiBold {
   font-size: 1rem;
   font-weight: 600;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .workSans-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .posterama-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .openSans-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .raleway-semiBold {
   font-size: 1rem;
   font-weight: 600;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .raleway-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .lato-bold {
   font-size: 1rem;
   font-weight: 700;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 .work-content-wrapper .identity-design .content-container .content-wrapper .font-weight-wrapper .font-weights .font-weight p .lato-regular {
   font-size: 1rem;
   font-weight: 400;
-  color: #DFE8E3;
+  color: #6D6D6D;
 }
 
 @media only screen and (max-width: 768px) {
