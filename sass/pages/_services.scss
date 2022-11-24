@@ -1,52 +1,83 @@
-.service-columns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 48px;
   justify-content: center;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  @include for-mobile() {
-    flex-direction: column;
-    align-items: flex-start;
-    position: static;
+  align-items: center;
+  padding-bottom: $--spacing-xxl;
+  @include for-desktop() {
+    grid-template-columns: repeat(2, 300px);
   }
-  div {
-    margin-right: 100px;
-    margin-left: 100px;
-    @include for-tablet() {
-      margin-right: $--spacing-xxl;
-      margin-left: $--spacing-xxl;
+  @include for-mobile() {
+     padding-bottom: $--spacing-xl;
+     grid-gap: 36px;
+  }
+  @media (max-width: 692px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-card {
+    border-radius: $--border-radius-small;
+    padding: 32px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include for-desktop() {
+      &:last-child {
+        grid-column: 1 / 3;
+        justify-self: center;
+      }
     }
-    @include for-mobile() {
-      margin: 0 0 36px 0;
+    @media (max-width: 692px) {
+      width: 100%;
+      &:last-child {
+        grid-column: initial;
+      }
+    }
+    .card-number {
+      color: $black;
     }
     h2 {
-      margin-bottom: $--spacing-m;
-      color: $grey;
+      margin-bottom: $--spacing-s;
+      color: $black;
+      border-bottom: 1px solid $black;
+      padding-bottom: $--spacing-m;
+      margin-top: 4px;
       @include for-mobile() {
         font-size: $--fs-600;
         font-weight: $--sb-weight;
         letter-spacing: $--ls-048;
       }
     }
-    span {
-      display: block;
-      text-align: center;
-      margin-bottom: 16px;
-      @include for-mobile() {
-        text-align: left;
-        font-size: $--fs-200;
-        font-weight: $--sb-weight;
-        line-height: $--l-h-18;
-        letter-spacing: $--ls-015;
+
+    .service-areas {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      justify-content: center;
+      @media (max-width: 692px) {
+        grid-template-columns: 1fr 1fr;
       }
-      &:last-child {
+      .service-area {
         margin-bottom: 0;
+        margin-top: 16px;
+        @include for-mobile() {
+          text-align: left;
+          font-size: $--fs-200;
+          font-weight: $--sb-weight;
+          line-height: $--l-h-18;
+          letter-spacing: $--ls-015;
+        }
       }
     }
+  }
+  .card-discover {
+    background-color: $khaki-green;
+  }
+  .card-design {
+    background-color: $light-blue;
+  }
+  .card-production {
+    background-color: $yellow;
   }
 }

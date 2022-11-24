@@ -272,10 +272,29 @@
             }
           }
           ul {
-            padding-left: $--spacing-s;
+            list-style: none;
+            padding-left: $--spacing-xs;
             margin-bottom: 0;
             @include for-mobile() {
               margin-bottom: $--spacing-m;
+            }
+            li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 4px;
+              &::before {
+                margin-top: 1.5px;
+                display: inline-block;
+                content: "";
+                border-radius: 100%;
+                height: 5px;
+                width: 5px;
+                margin-right: $--spacing-xs;
+                background-color: $dark-grey;
+              }
+              &:last-child {
+                margin-bottom: 0;
+              }
             }
           }
         }
@@ -344,289 +363,6 @@
   }
 }
 
-.text-row-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: $--spacing-xxl;
-  position: relative;
-  @include for-mobile() {
-    flex-direction: column;
-    padding-bottom: $--spacing-xl;
-  }
-  .text--column {
-    flex: 50%;
-    @include for-mobile() {
-      flex: 100%;
-    }
-    .subtitle-wrapper {
-      padding-bottom: 8px;
-      .subtitle--large {
-        color: $grey;
-        @include for-mobile() {
-          font-size: $--fs-200;
-          font-weight: $--sb-weight;
-          line-height: $--l-h-18;
-          letter-spacing: $--ls-015;
-        }
-      }
-    }
-    .h2 {
-      padding-bottom: $--spacing-m;
-      @include for-mobile() {
-        font-size: $--fs-600;
-        font-weight: $--sb-weight;
-        letter-spacing: $--ls-048;
-      }
-    }
-  }
-  .text--column {
-    flex: 50%;
-    .subtitle {
-      color: $grey;
-    }
-  }
-  .text--column__left {
-    padding-right: 100px;
-    @include for-tablet() {
-      padding-right: $--spacing-xl;
-    }
-    @include for-mobile() {
-      padding-right: 0;
-    }
-    p {
-      padding-bottom: 16px;
-      &:last-of-type {
-        padding-bottom: 0;
-      }
-    }
-    .contact-list-wrapper {
-      position: relative;
-      display: flex;
-      align-items: center;
-      margin-top: $--spacing-xl;
-      background-color: $light-petrol;
-      padding: $--spacing-l $--spacing-m;
-      border-radius: $--button-radius;
-      @include for-tablet() {
-        margin-top: $--spacing-l;
-        padding: $--spacing-m;
-      }
-      @include for-desktop() {
-        flex-direction: column;
-      }
-      .contact-list {
-        .subtitle-wrapper {
-          padding-bottom: $--spacing-s;
-          @include for-desktop() {
-            text-align: center;
-          }
-          .subtitle--large {
-            color: $petrol;
-            font-size: $--fs-300;
-            font-weight: $--sb-weight;
-            line-height: $--l-h-20;
-            letter-spacing: $--ls-015;
-          }
-        }
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          li {
-            padding-right: $--spacing-m;
-            /*
-            padding-bottom: 6px;
-            background-image: linear-gradient(
-              to right,
-              #256265 50%,
-              $white 50%
-            );
-            background-size: 200% 100%;
-            background-position: 100%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: $link-hover-left-right-contact;
-            @include hover-supported() {
-              background-position: 0%;
-              transition: $link-hover-left-right-contact;
-            }
-            */
-            color: $black;
-            transition: all 0.2s ease-in-out 0s;
-            &:first-child {
-              margin-bottom: -5px;
-            }
-            &:last-child {
-              padding-right: 0;
-            }
-            @include hover-supported() {
-              transform: $--hover-effect-moveUp;
-            }
-          }
-        }
-      }
-      .profile-img {
-        padding-right: $--spacing-l;
-        @include for-desktop() {
-          padding-bottom: $--spacing-m;
-          padding-right: initial;
-        }
-        img {
-          width: 150px;
-          height: 150px;
-          border-radius: 100%;
-          /*
-          border: 2px solid $light-grey;
-          */
-          @include for-mobile() {
-            width: 125px;
-            height: 125px;
-          }
-        }
-      }
-      .business-card {
-        position: absolute;
-        right: 0;
-        display: block;
-        @include for-large-desktops() {
-          display: none;
-        }
-      }
-    }
-  }
-  .divider {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: $--spacing-xxl;
-    border-left: 1px solid $light-grey;
-    @include for-mobile() {
-      position: static;
-      border: 1px solid $light-grey;
-      border-left: none;
-      margin: $--spacing-xxl 0;
-    }
-  }
-  .text--column__right {
-    padding-left: 100px;
-    @include for-mobile() {
-      padding-left: 0;
-    }
-    .experience-list {
-      margin-bottom: $--spacing-l;
-      &:last-child {
-        padding-bottom: 0;
-      }
-      .work {
-        margin-bottom: $--spacing-m;
-        &:last-child {
-          padding-bottom: 0;
-        }
-        .work-skills {
-          padding-top: $--spacing-s;
-          .skills-title {
-            color: $black;
-            padding-bottom: 12px;
-            display: block;
-          }
-          .skills-wrapper {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            @include for-mobile() {
-              flex-wrap: nowrap;
-              overflow-x: auto;
-              white-space: nowrap;
-            }
-            .skill-item {
-              font-size: $--fs-100;
-              margin-right: 12px;
-              margin-bottom: 12px;
-              border: 1px solid $light-grey;
-              border-radius: $--button-radius-3px;
-              padding: 6px $--spacing-xs;
-            }
-          }
-        }
-      }
-      h4 {
-        padding-bottom: 8px;
-        font-size: $--fs-400;
-        font-weight: $--sb-weight;
-        letter-spacing: $--ls-015;
-        a {
-          &:hover {
-            color: $petrol;
-            transition: all 250ms ease-out;
-          }
-        }
-      }
-      .work-role {
-        color: $black;
-        @include for-mobile() {
-          display: block;
-          padding-bottom: 8px;
-        }
-        /*
-        &::after {
-          content: "•";
-          padding: 0 6px;
-          @include for-mobile() {
-            content: none;
-            padding: 0;
-          }
-        }
-        */
-      }
-      .date {
-        display: block;
-        font-size: $--fs-100;
-        color: $dark-grey;
-        letter-spacing: $--ls-015;
-        padding-top: 8px;
-        @include for-mobile() {
-          font-size: $--fs-100;
-          font-weight: $--r-weight;
-          line-height: $--l-h-18;
-        }
-      }
-      .work-description {
-        padding-top: 16px;
-      }
-    }
-    .skills-section {
-      h4 {
-        padding-bottom: 16px;
-      }
-      ul {
-        margin: 0;
-        padding-left: $--spacing-m;
-        padding-bottom: $--spacing-m;
-        &:last-child {
-          padding-bottom: 0;
-        }
-      }
-    }
-    .education-section {
-      margin-bottom: $--spacing-xl;
-    }
-    .skills-section {
-      margin-bottom: $--spacing-xl;
-    }
-    .language-section {
-      margin-bottom: 0;
-      .language {
-        padding-bottom: $--spacing-m;
-        &:last-child {
-          padding-bottom: 0;
-        }
-      }
-    }
-  }
-}
 
 .back-to-top-btn {
   @include for-mobile() {

@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($) {
   /*----------------------------------------------------*/
   /* Preloader
-    ------------------------------------------------------ */
   function preloader() {
     var preloader = $("#preloader");
     preloader.show();
@@ -13,6 +12,7 @@ jQuery(document).ready(function ($) {
   } else {
     $("#preloader").hide();
   }
+      ------------------------------------------------------ */
 
   // Top Navigation
   $(".menu-toggle").on("click", function () {
