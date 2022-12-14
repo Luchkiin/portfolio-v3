@@ -327,25 +327,30 @@ body {
   color: #000000;
 }
 
+/*
+// Browser Scrollbar Styles
+
+// Firefox 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #CACACA #FFFFFF;
+  scrollbar-color: $scrollbar-thumb $white;
 }
 
+//Chrome, Edge, and Safari 
 *::-webkit-scrollbar {
   width: 14px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: $white;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #CACACA;
+  background-color: $scrollbar-thumb;
   border-radius: 20px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid $white;
 }
-
+*/
 .container {
   width: 100%;
   margin: 0 auto;
