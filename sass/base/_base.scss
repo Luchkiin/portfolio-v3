@@ -5,6 +5,29 @@ body {
   color: $black;
 }
 
+// Browser Scrollbar Styles
+
+// Firefox 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar-thumb $white;
+}
+
+//Chrome, Edge, and Safari 
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-thumb;
+  border-radius: 20px;
+  border: 4px solid $white;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
