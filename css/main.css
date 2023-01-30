@@ -1104,6 +1104,7 @@ input [type="button"]:focus {
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 400px;
   z-index: 5;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1111,6 +1112,10 @@ input [type="button"]:focus {
     bottom: 0;
     right: 0;
     width: auto;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -1140,6 +1145,15 @@ input [type="button"]:focus {
   position: relative;
   background-color: #FFFFFF;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+  #consent-popup .consent-popup-inner-wrapper {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 #consent-popup .consent-popup-inner-wrapper .consent-close {

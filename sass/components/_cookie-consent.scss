@@ -7,10 +7,15 @@
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 400px;
   z-index: 5;
+  border-radius: $--border-radius-small;
   @include for-tablet() {
     bottom: 0;
     right: 0;
     width: auto;
+    border-top-right-radius: $--border-radius-large;
+    border-top-left-radius: $--border-radius-large;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .cookie-overlay {
     position: fixed;
@@ -30,6 +35,12 @@
     position: relative;
     background-color: $white;
     border-radius: $--border-radius-small;
+    @include for-tablet() {
+      border-top-right-radius: $--border-radius-large;
+      border-top-left-radius: $--border-radius-large;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
     .consent-close {
       position: absolute;
       right: 12px;
