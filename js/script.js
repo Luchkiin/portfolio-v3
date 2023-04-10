@@ -120,6 +120,18 @@ jQuery(document).ready(function ($) {
   $(window).on("hashchange", function (e) {
     history.replaceState("", document.title, e.originalEvent.oldURL);
   });
+
+
+  $('.btn-wrapper').click(function (e) {
+    $(this).find('.click').removeClass("feedback");
+    var posX = $(this).offset().left,
+        posY = $(this).offset().top;
+    var styles = {
+      top : (e.pageY - posY) + 'px',
+      left : (e.pageX - posX) + 'px'
+    };
+    $(this).find('.click').css(styles).addClass("feedback");
+  });
 });
 
 /*----------------------------------------------------*/
@@ -179,7 +191,6 @@ window.onload = () => {
   }
 };
 
-
 /*----------------------------------------------------*/
 /* Read More Functionality
         ------------------------------------------------------ */
@@ -190,11 +201,11 @@ function showMore() {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Read more +"; 
+    btnText.innerHTML = "Read more +";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Read less -"; 
+    btnText.innerHTML = "Read less -";
     moreText.style.display = "inline";
   }
 }

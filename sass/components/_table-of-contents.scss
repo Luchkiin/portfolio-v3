@@ -14,7 +14,7 @@ main > .sidebar-nav-wrapper {
   position: absolute;
   padding-left: 0;
   background-color: $white;
-  margin-top: 39px;
+  margin-top: 70px;
   margin-left: -100px;
   border: 1px solid $light-grey;
   border-top-right-radius: 8px;
@@ -35,6 +35,9 @@ main > .sidebar-nav-wrapper {
   }
   .sidebar-nav__title {
     padding: $--spacing-m $--spacing-m 20px 100px;
+    font-size: $--fs-600;
+    font-weight: $--sb-weight;
+    letter-spacing: $--ls-048;
   }
   ul {
     list-style: none;

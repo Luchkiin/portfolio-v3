@@ -38,6 +38,8 @@ input [type="button"] {
 }
 
 .btn-wrapper {
+  display: inline-block;
+  position: relative;
   @include for-tablet() {
     display: flex;
     justify-content: center;
@@ -47,7 +49,8 @@ input [type="button"] {
     color: $white;
     display: inline-block;
     @include hover-supported() {
-      opacity: 0.9;
+      //opacity: 0.85;
+      background-color: #45797c;
     }
   }
 }
@@ -58,10 +61,34 @@ input [type="button"] {
   display: inline-block;
   border: 1px solid $black;
   margin: 0;
-  @include hover-supported() {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
     background-color: $black;
+    z-index: -1;
+    transition: 250ms ease-in-out;
+    border-radius: 4px;
+    button:after {
+      content: "»";
+      position: absolute;
+      opacity: 0;
+      top: 14px;
+      right: -20px;
+      transition: 0.5s;
+    }
+  }
+  @include hover-supported() {
+    //background-color: $black;
     color: $white;
     border: 1px solid $black;
+    &::before {
+      width: 100%;
+    }
   }
 }
 
@@ -117,8 +144,10 @@ input [type="button"] {
     right: 0;
   }
   @include hover-supported() {
-    transition: $--transition-250;
     background-color: $light-grey;
+    img {
+      transform: translateY(-2px);
+    }
   }
   .icon-wrapper {
     width: 100%;
@@ -128,6 +157,7 @@ input [type="button"] {
     justify-content: center;
     img {
       margin: auto;
+      transition: $--transition-250;
     }
   }
 }
@@ -153,5 +183,32 @@ input [type="button"] {
       bottom: 90px;
       border: 1px solid $light-grey;
     }
+  }
+}
+
+/*Pulsating effect*/
+
+.btn-wrapper .click {
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.btn-wrapper .click.feedback {
+  animation: feedback 700ms ease-out;
+}
+
+@keyframes feedback {
+  0% {
+    background: rgba(255, 255, 255, 0.2);
+    height: 0px;
+    width: 0px;
+  }
+  100% {
+    background: rgba(255, 255, 255, 0);
+    height: 400px;
+    width: 400px;
   }
 }

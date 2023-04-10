@@ -19,6 +19,34 @@
       top: 92%;
       transform: translateY(-92%);
     }
+    a {
+      transition: $--transition-250;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "Go back";
+        color: $black;
+        margin-left: 16px;
+        transition: $--transition-250;
+        opacity: 0;
+        font-size: $--fs-300;
+        font-weight: $--sb-weight;
+        line-height: $--l-h-20;
+        letter-spacing: $--ls-015;
+        @include for-tablet() {
+          display: none;
+        }
+      }
+      @include hover-supported() {
+        transform: translateX(-2px);
+        &::after {
+          content: "Go back";
+          margin-left: 12px;
+          transition: $--transition-250;
+          opacity: 1;
+        }
+      }
+    }
   }
   @include for-mobile() {
     .h1 {
@@ -38,8 +66,13 @@
   margin-bottom: 164px;
   position: relative;
   z-index: 1;
-  background: rgb(37,98,101);
-  background: linear-gradient(90deg, rgba(37,98,101,1) 0%, rgba(56,141,145,1) 50%, rgba(37,98,101,1) 100%); 
+  background: rgb(37, 98, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 98, 101, 1) 0%,
+    rgba(56, 141, 145, 1) 50%,
+    rgba(37, 98, 101, 1) 100%
+  );
   height: 300px;
   margin-left: -100px;
   margin-right: -100px;
@@ -63,6 +96,34 @@
     left: 100px;
     top: 54%;
     transform: translateY(-80%);
+    a {
+      transition: $--transition-250;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "Go back";
+        color: $white;
+        margin-left: 16px;
+        transition: $--transition-250;
+        opacity: 0;
+        font-size: $--fs-300;
+        font-weight: $--sb-weight;
+        line-height: $--l-h-20;
+        letter-spacing: $--ls-015;
+        @include for-tablet() {
+          display: none;
+        }
+      }
+      @include hover-supported() {
+        transform: translateX(-2px);
+        &::after {
+          content: "Go back";
+          margin-left: 12px;
+          transition: $--transition-250;
+          opacity: 1;
+        }
+      }
+    }
     @include for-desktop() {
       left: 48px;
     }

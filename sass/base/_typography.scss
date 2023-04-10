@@ -7,10 +7,13 @@ h1.h1-home {
   text-align: $--text-left;
   text-transform: $--capitalize;
   padding-bottom: 16px;
-  text-shadow: $--text-shadow-light;
+  @include for-desktop() {
+    font-size: $--fs-850;
+  }
   @include for-tablet() {
     font-size: $--fs-800;
     padding-bottom: 8px;
+    text-shadow: $--text-shadow-light;
   }
 }
 
@@ -21,14 +24,14 @@ h2.h2-home {
   letter-spacing: $--ls-025;
   color: $black;
   text-align: $--text-left;
-  padding-bottom: 64px;
-  text-shadow: $--text-shadow-light;
+  padding-bottom: 48px;
   @include for-tablet() {
     font-size: $--fs-200;
     line-height: $--l-h-22;
     letter-spacing: $--ls-015;
     padding-bottom: 36px;
     text-align: $--text-center;
+    text-shadow: $--text-shadow-light;
   }
 }
 

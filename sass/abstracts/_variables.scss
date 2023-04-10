@@ -7,6 +7,8 @@ $--menu-from-above-down: translateY(-100%);
 $--menu-from-above-up: translateY(0);
 $--menu-speed-down-up: 750ms;
 $--hover-effect-moveUp: translateY(-3px);
+$--hover-effect-moveLeft: translateX(-3px);
+$--hover-effect-moveRight: translateX(3px);
 $link-hover-left-right-contact: 0.75s cubic-bezier(0.7, 0.3, 0, 1);
 $link-hover-left-right-menu: 0.75s cubic-bezier(0.7, 0.3, 0, 1);
 
@@ -28,7 +30,7 @@ $z-index: (
 /* Border Radius
 ******************************************************/
 $--button-radius-3px: 3px;
-$--button-radius: 6px;
+$--button-radius: 8px;
 $--border-radius-small: 8px;
 $--border-radius-large: 16px;
 
@@ -38,14 +40,20 @@ $--text-shadow-light: 0 2px 3px rgba(0, 0, 0, 0.15);
 $--text-shadow-mid: 0 2px 3px rgba(0, 0, 0, 0.3);
 $--text-shadow-heavy: 0 2px 3px rgba(0, 0, 0, 0.5);
 
+
+/* Box shadows
+******************************************************/
+$box-shadow-down: 0px 4px 8px rgba(0, 0, 0, 0.08);
+
 /* Spacing
 ******************************************************/
 $--spacing-xs: 8px;
 $--spacing-s: 16px;
 $--spacing-m: 24px;
-$--spacing-l: 36px;
+$--spacing-l: 32px;
 $--spacing-xl: 48px;
-$--spacing-xxl: 75px;
+$--spacing-xxl: 80px;
+$--spacing-xxxl: 96px;
 
 /* Max Width
 ******************************************************/
@@ -54,8 +62,4 @@ $--max-width-large: 1920px;
 $--max-width: 1420px;
 $--max-width-medium: 950px;
 $--max-width-small: 750px;
-
-/* Max Width
-******************************************************/
-$box-shadow-down: 0px 4px 8px rgba(0, 0, 0, 0.08);
 

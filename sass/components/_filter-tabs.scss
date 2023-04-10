@@ -1,8 +1,7 @@
 .work-filter-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: $--spacing-xl;
-  border-bottom: 1px solid $light-grey;
+  margin-bottom: $--spacing-l;
   @include for-mobile() {
     margin-left: -24px;
     margin-right: -24px;
@@ -10,11 +9,11 @@
   }
   .filter-tabs {
     display: flex;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
     position: relative;
     &:after {
-      content: " ";
+      content: "";
       display: table;
       clear: both;
     }
@@ -22,9 +21,10 @@
       align-items: stretch;
       width: 100%;
       justify-content: center;
+      border-bottom: 0.5px solid $light-grey;
     }
     .filter-tab {
-      padding: $--spacing-s 28px;
+      padding: $--spacing-s $--spacing-m;
       font-size: $--fs-300;
       font-weight: $--sb-weight;
       line-height: $--l-h-20;
@@ -62,7 +62,7 @@
     }
     .filter-underline {
       position: absolute;
-      bottom: -1px;
+      bottom: -0.5px;
       left: 0;
       height: 2px;
       width: 100%;

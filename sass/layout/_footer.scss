@@ -15,7 +15,7 @@
       align-items: center;
       transition: $--transition-250;
       @include hover-supported() {
-        transform: $--hover-effect-moveUp;
+        transform: $--hover-effect-moveLeft;
       }
     }
     img {
