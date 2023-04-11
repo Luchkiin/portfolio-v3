@@ -1466,6 +1466,7 @@ main > .sidebar-nav-wrapper {
 @media only screen and (max-width: 1200px) {
   .work-grid-wrapper {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
   }
 }
 @media only screen and (max-width: 768px) {

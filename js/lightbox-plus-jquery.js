@@ -10650,7 +10650,7 @@ return jQuery;
     positionFromTop: 48,
     resizeDuration: 700,
     showImageNumberLabel: true,
-    wrapAround: true,
+    wrapAround: false,
     disableScrolling: true,
     /*
     Sanitize Title
