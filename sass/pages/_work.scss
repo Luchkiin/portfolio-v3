@@ -1081,7 +1081,7 @@ a.link.link--large {
     .hr-divider-white {
       height: $--spacing-xxl;
       background-color: $white;
-      margin: 0 -75px;
+      margin: 0 -80px;
       @include for-large-desktops() {
         margin: 0 -100px;
       }

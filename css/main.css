@@ -3882,7 +3882,7 @@ main > .sidebar-nav-wrapper {
 .work-content-wrapper .web-design .hr-divider-white {
   height: 80px;
   background-color: #FFFFFF;
-  margin: 0 -75px;
+  margin: 0 -80px;
 }
 @media only screen and (max-width: 1500px) {
   .work-content-wrapper .web-design .hr-divider-white {
