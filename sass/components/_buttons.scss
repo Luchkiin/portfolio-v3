@@ -62,6 +62,7 @@ input [type="button"] {
   border: 1px solid $black;
   margin: 0;
   position: relative;
+  z-index: 0;
   &::before {
     content: "";
     position: absolute;
@@ -73,14 +74,6 @@ input [type="button"] {
     z-index: -1;
     transition: 250ms ease-in-out;
     border-radius: 4px;
-    button:after {
-      content: "»";
-      position: absolute;
-      opacity: 0;
-      top: 14px;
-      right: -20px;
-      transition: 0.5s;
-    }
   }
   @include hover-supported() {
     //background-color: $black;
