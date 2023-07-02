@@ -1045,7 +1045,7 @@ input [type=button]:focus {
   #consent-popup {
     bottom: 0;
     right: 0;
-    width: auto;
+    width: 100%;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 0;
